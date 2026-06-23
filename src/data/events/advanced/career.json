@@ -1,0 +1,141 @@
+[
+  {
+    "id": "adv_career_interview_invite",
+    "title": "面试邀请",
+    "category": "advanced",
+    "type": "career",
+    "phase": [
+      "career_phase"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 38,
+    "once": true,
+    "conditions": {
+      "minProgress": 70,
+      "minStats": {
+        "career": 55,
+        "english": 45,
+        "gpa": 45
+      }
+    },
+    "weightModifiers": [],
+    "text": "你收到了一封不是自动拒信的邮件。它没有说你很优秀，但至少它让你选一个面试时间。",
+    "choices": [
+      {
+        "text": "认真准备面试",
+        "effects": {
+          "career": 8,
+          "english": 3,
+          "sanity": -6
+        },
+        "flagsAdd": [
+          "interview_prepared"
+        ],
+        "furnitureAdd": [],
+        "resultText": "你把常见问题练到嘴比脑子快。"
+      },
+      {
+        "text": "找朋友mock interview",
+        "effects": {
+          "career": 6,
+          "english": 2,
+          "social": 3,
+          "sanity": -3
+        },
+        "flagsAdd": [
+          "mock_interview_done"
+        ],
+        "furnitureAdd": [],
+        "resultText": "朋友指出了你的口头禅，也指出了你的优势。"
+      },
+      {
+        "text": "临场发挥，相信玄学",
+        "effects": {
+          "career": -3,
+          "sanity": 3,
+          "identity": 1
+        },
+        "flagsAdd": [
+          "interview_unprepared"
+        ],
+        "furnitureAdd": [],
+        "resultText": "玄学没有拒绝你，但也没有保证你。"
+      }
+    ]
+  },
+  {
+    "id": "adv_career_offer_or_waitlist",
+    "title": "Offer或等待名单",
+    "category": "advanced",
+    "type": "career",
+    "phase": [
+      "graduation"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 42,
+    "once": true,
+    "conditions": {
+      "minProgress": 90,
+      "minStats": {
+        "career": 60
+      }
+    },
+    "weightModifiers": [],
+    "text": "毕业前，你等来了最终邮件。你深呼吸，点开。",
+    "choices": [
+      {
+        "text": "接受不完美但真实的机会",
+        "effects": {
+          "career": 10,
+          "identity": 5,
+          "sanity": 2
+        },
+        "flagsAdd": [
+          "offer_path"
+        ],
+        "furnitureAdd": [],
+        "resultText": "它不是梦中情offer，但它是一条路。"
+      },
+      {
+        "text": "继续等更好的",
+        "effects": {
+          "career": -2,
+          "identity": 3,
+          "sanity": -4
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "选择也是成本，等待也是。"
+      },
+      {
+        "text": "转向回国机会",
+        "effects": {
+          "career": 5,
+          "identity": 5,
+          "visa": -2
+        },
+        "flagsAdd": [
+          "return_option_open"
+        ],
+        "furnitureAdd": [],
+        "resultText": "你没有输给海外，只是重新选择了战场。"
+      }
+    ]
+  }
+]

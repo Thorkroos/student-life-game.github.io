@@ -1,0 +1,190 @@
+[
+  {
+    "id": "arrival_first_room",
+    "title": "第一晚的房间",
+    "category": "basic",
+    "type": "life",
+    "phase": [
+      "arrival"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 100,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 6
+    },
+    "weightModifiers": [],
+    "text": "你打开房门，房间里有一张地毯、一个枕头和一盏落地灯。灯亮起来的时候，你突然意识到：留学生活不是从朋友圈开始的，是从地板开始的。",
+    "choices": [
+      {
+        "text": "先躺下，明天再说",
+        "effects": {
+          "sanity": 5,
+          "identity": 1
+        },
+        "flagsAdd": [
+          "rug_beginning"
+        ],
+        "furnitureAdd": [],
+        "resultText": "地毯不软，但它至少没有催你交作业。"
+      },
+      {
+        "text": "立刻搜索二手床垫",
+        "effects": {
+          "money": -5,
+          "lifeSkill": 3,
+          "sanity": -2
+        },
+        "flagsAdd": [
+          "started_furniture_search"
+        ],
+        "furnitureAdd": [],
+        "resultText": "你发现二手家具市场像一个没有规则的副本。"
+      },
+      {
+        "text": "拍照发给朋友：已落地，勿念",
+        "effects": {
+          "social": 2,
+          "sanity": 2,
+          "identity": -1
+        },
+        "flagsAdd": [
+          "posted_arrival_room"
+        ],
+        "furnitureAdd": [],
+        "resultText": "你没有拍到地毯最真实的角度。"
+      }
+    ]
+  },
+  {
+    "id": "arrival_sim_card",
+    "title": "电话卡选择",
+    "category": "basic",
+    "type": "life",
+    "phase": [
+      "arrival"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 60,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "你站在商场里，看着几家运营商的套餐。每个销售都说自己这个最划算，像在给你开局职业推荐。",
+    "choices": [
+      {
+        "text": "选最便宜的套餐",
+        "effects": {
+          "money": 3,
+          "lifeSkill": 2,
+          "sanity": -1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你省下了一点钱，也获得了“信号不稳定”的生活彩蛋。"
+      },
+      {
+        "text": "选大流量套餐",
+        "effects": {
+          "money": -5,
+          "sanity": 2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "至少你可以在迷路时顺畅打开地图。"
+      },
+      {
+        "text": "问清楚合同细节",
+        "effects": {
+          "english": 3,
+          "lifeSkill": 2,
+          "sanity": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你第一次用英文维护了自己的钱包。"
+      }
+    ]
+  },
+  {
+    "id": "arrival_orientation",
+    "title": "Orientation Day",
+    "category": "basic",
+    "type": "school",
+    "phase": [
+      "arrival",
+      "adapt"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 60,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "学校orientation上，每个人都在自我介绍。你听到了五次passion，七次networking，以及一次非常响亮的胃叫。",
+    "choices": [
+      {
+        "text": "主动找人聊天",
+        "effects": {
+          "social": 5,
+          "english": 2,
+          "sanity": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你获得了两个名字和一个完全记不住的专业。"
+      },
+      {
+        "text": "拿完免费帆布袋就走",
+        "effects": {
+          "money": 1,
+          "sanity": 3,
+          "social": -1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "帆布袋质量一般，但它现在是你的第一个本地资产。"
+      },
+      {
+        "text": "认真听学校资源介绍",
+        "effects": {
+          "gpa": 2,
+          "career": 2,
+          "lifeSkill": 2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你收藏了五个链接，未来可能一个都打不开。"
+      }
+    ]
+  }
+]

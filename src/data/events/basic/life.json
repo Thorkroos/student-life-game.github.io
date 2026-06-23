@@ -1,0 +1,264 @@
+[
+  {
+    "id": "life_delivery_missing",
+    "title": "快递显示已送达",
+    "category": "basic",
+    "type": "life",
+    "phase": [
+      "adapt",
+      "mid_semester",
+      "break"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 38,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "快递页面显示包裹已送达，但门口什么都没有。客服机器人只会重复：please check your mailbox。",
+    "choices": [
+      {
+        "text": "礼貌写邮件询问",
+        "effects": {
+          "english": 2,
+          "sanity": -2,
+          "lifeSkill": 1
+        },
+        "flagsAdd": [
+          "delivery_missing"
+        ],
+        "furnitureAdd": [],
+        "resultText": "你的语气非常礼貌，礼貌到每个please都带刺。"
+      },
+      {
+        "text": "直接打电话argue",
+        "effects": {
+          "english": 4,
+          "sanity": -5,
+          "lifeSkill": 3
+        },
+        "flagsAdd": [
+          "delivery_missing",
+          "delivery_argued"
+        ],
+        "furnitureAdd": [],
+        "resultText": "你第一次在英文电话里打断别人，像完成了某种成人礼。"
+      },
+      {
+        "text": "算了，再买一个",
+        "effects": {
+          "money": -8,
+          "sanity": 3
+        },
+        "flagsAdd": [
+          "delivery_missing"
+        ],
+        "furnitureAdd": [],
+        "resultText": "钱消失了，但问题也暂时消失了。"
+      }
+    ]
+  },
+  {
+    "id": "life_landlord_denial",
+    "title": "房东说这是你弄坏的",
+    "category": "basic",
+    "type": "housing",
+    "phase": [
+      "mid_semester",
+      "break"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 35,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "水龙头坏了。房东回复：“It was working before you moved in.” 这句话像宇宙通用的推责模板。",
+    "choices": [
+      {
+        "text": "查合同和租房法规",
+        "effects": {
+          "lifeSkill": 5,
+          "english": 2,
+          "sanity": -3
+        },
+        "flagsAdd": [
+          "landlord_denial"
+        ],
+        "furnitureAdd": [],
+        "resultText": "你反手甩出合同条款，语气平静得像律师助理。"
+      },
+      {
+        "text": "自己花钱修",
+        "effects": {
+          "money": -12,
+          "sanity": 2,
+          "lifeSkill": 2
+        },
+        "flagsAdd": [
+          "landlord_denial"
+        ],
+        "furnitureAdd": [],
+        "resultText": "你解决了问题，也为房东的人生减轻了责任。"
+      },
+      {
+        "text": "在群里问有没有类似经历",
+        "effects": {
+          "social": 3,
+          "lifeSkill": 2,
+          "sanity": 1
+        },
+        "flagsAdd": [
+          "landlord_denial",
+          "wechat_group_chaos"
+        ],
+        "furnitureAdd": [],
+        "resultText": "你收获了经验，也收获了十个更离谱的故事。"
+      }
+    ]
+  },
+  {
+    "id": "life_roommate_midnight_cooking",
+    "title": "室友凌晨做饭",
+    "category": "basic",
+    "type": "housing",
+    "phase": [
+      "adapt",
+      "mid_semester",
+      "exam"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 32,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "凌晨一点，厨房传来锅铲声。你躺在床上，开始思考“共居”是不是一种大型心理测试。",
+    "choices": [
+      {
+        "text": "去沟通",
+        "effects": {
+          "english": 2,
+          "social": 2,
+          "sanity": -2,
+          "lifeSkill": 2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你用尽量温和的语气表达了自己还想做人。"
+      },
+      {
+        "text": "戴耳塞忍了",
+        "effects": {
+          "sanity": -3,
+          "social": 1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "耳塞挡住了声音，挡不住怨念。"
+      },
+      {
+        "text": "第二天也凌晨做饭",
+        "effects": {
+          "sanity": 2,
+          "social": -6
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你们进入了厨房冷战时代。"
+      }
+    ]
+  },
+  {
+    "id": "life_medical_booking",
+    "title": "第一次预约看病",
+    "category": "basic",
+    "type": "life",
+    "phase": [
+      "mid_semester",
+      "break"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 20,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "你身体不舒服，打开预约页面。症状选项很多，但没有“被留学生活轻微殴打”。",
+    "choices": [
+      {
+        "text": "认真预约GP",
+        "effects": {
+          "english": 3,
+          "lifeSkill": 4,
+          "money": -5,
+          "sanity": 2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你完成了一次真正的自我照顾。"
+      },
+      {
+        "text": "先靠热水和睡觉",
+        "effects": {
+          "money": 2,
+          "sanity": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "热水很努力，但它不是万能系统。"
+      },
+      {
+        "text": "问朋友流程",
+        "effects": {
+          "social": 2,
+          "lifeSkill": 3,
+          "sanity": 1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "朋友发来一长串经验，你第一次觉得群聊有用。"
+      }
+    ]
+  }
+]

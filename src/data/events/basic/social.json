@@ -1,0 +1,259 @@
+[
+  {
+    "id": "social_jason_group",
+    "title": "Jason和他的兄弟团",
+    "category": "basic",
+    "type": "social",
+    "phase": [
+      "mid_semester",
+      "break"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 28,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "Jason邀请你参加一个局。他说Kyle、Alex、Richard都会来。你一瞬间不知道这是聚会还是英语阅读理解。",
+    "choices": [
+      {
+        "text": "去参加",
+        "effects": {
+          "social": 6,
+          "money": -8,
+          "sanity": -3,
+          "love": 2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你终于分清了Kyle和Alex，但Richard又带来了一个朋友。"
+      },
+      {
+        "text": "婉拒，说要赶due",
+        "effects": {
+          "gpa": 3,
+          "sanity": 2,
+          "social": -1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "due成为了你最稳定的社交挡箭牌。"
+      },
+      {
+        "text": "只去一小时",
+        "effects": {
+          "social": 3,
+          "money": -4,
+          "lifeSkill": 1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你学会了成年人的撤退术。"
+      }
+    ]
+  },
+  {
+    "id": "social_zheng_studio",
+    "title": "大郑哥的studio邀请",
+    "category": "basic",
+    "type": "dating",
+    "phase": [
+      "mid_semester",
+      "break"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 24,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "大郑哥说他住studio，语气像在说自己拥有一座王国。他邀请你去坐坐。",
+    "choices": [
+      {
+        "text": "去看看",
+        "effects": {
+          "social": 3,
+          "love": 3,
+          "sanity": -3,
+          "identity": -1
+        },
+        "flagsAdd": [
+          "studio_invitation"
+        ],
+        "furnitureAdd": [],
+        "resultText": "studio里确实只有一张椅子。"
+      },
+      {
+        "text": "改约公共场所",
+        "effects": {
+          "lifeSkill": 3,
+          "identity": 3,
+          "love": 1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "边界感上线，你听见自己心里有个小人鼓掌。"
+      },
+      {
+        "text": "已读不回",
+        "effects": {
+          "sanity": 2,
+          "social": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你没有解释，世界也没有塌。"
+      }
+    ]
+  },
+  {
+    "id": "social_axuan_likes",
+    "title": "阿轩给你点赞",
+    "category": "basic",
+    "type": "social",
+    "phase": [
+      "adapt",
+      "mid_semester",
+      "break"
+    ],
+    "majorTags": [
+      "social_science",
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 22,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "阿轩在seminar里一言不发，但连续给你三条朋友圈点赞。你开始怀疑这是社科人的摩斯电码。",
+    "choices": [
+      {
+        "text": "主动私聊",
+        "effects": {
+          "social": 3,
+          "love": 2,
+          "identity": 2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "他现实中话不多，线上倒是有完整参考文献。"
+      },
+      {
+        "text": "继续互赞",
+        "effects": {
+          "social": 2,
+          "love": 1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你们的关系稳定发展为互联网礼貌。"
+      },
+      {
+        "text": "邀请他线下喝咖啡",
+        "effects": {
+          "love": 4,
+          "social": 2,
+          "sanity": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "他回复“可以”，并发来一个二次元表情。"
+      }
+    ]
+  },
+  {
+    "id": "social_k_muse",
+    "title": "K说你像未完成的作品",
+    "category": "basic",
+    "type": "dating",
+    "phase": [
+      "mid_semester",
+      "break"
+    ],
+    "majorTags": [
+      "art",
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 20,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "艺术学长K说你像一个“未完成的作品”。你不知道这是夸奖，还是他准备把你写进展览说明。",
+    "choices": [
+      {
+        "text": "接受他的表达",
+        "effects": {
+          "love": 4,
+          "identity": -3,
+          "sanity": -2
+        },
+        "flagsAdd": [
+          "muse_event"
+        ],
+        "furnitureAdd": [],
+        "resultText": "你短暂成为了别人的灵感，也差点丢掉自己的叙事。"
+      },
+      {
+        "text": "问他：我是人还是作品？",
+        "effects": {
+          "identity": 5,
+          "love": 1,
+          "sanity": -1
+        },
+        "flagsAdd": [
+          "muse_event"
+        ],
+        "furnitureAdd": [],
+        "resultText": "K沉默了。你第一次觉得沉默也可以是答案。"
+      },
+      {
+        "text": "转身去看别的展",
+        "effects": {
+          "identity": 4,
+          "sanity": 2,
+          "love": -1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你拿回了一点叙事权。"
+      }
+    ]
+  }
+]

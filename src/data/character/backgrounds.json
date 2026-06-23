@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ordinary",
+    "label": "普通家庭",
+    "description": "Money较低，抗压更强，Career动机更明显。",
+    "effects": {
+      "money": -10,
+      "sanity": 6,
+      "career": 5,
+      "identity": 2
+    }
+  },
+  {
+    "id": "middle",
+    "label": "中产家庭",
+    "description": "数值均衡，但容易被比较压力影响。",
+    "effects": {
+      "money": 4,
+      "gpa": 2,
+      "sanity": -2
+    }
+  },
+  {
+    "id": "wealthy",
+    "label": "富养家庭",
+    "description": "Money高，Life Skill低，生活可以升级但现实问题更容易破防。",
+    "effects": {
+      "money": 16,
+      "lifeSkill": -8,
+      "sanity": 3
+    }
+  },
+  {
+    "id": "all_in",
+    "label": "破釜沉舟型",
+    "description": "Money低、Visa压力高，但Career成长动机强。",
+    "effects": {
+      "money": -15,
+      "visa": -8,
+      "career": 10,
+      "sanity": -3
+    }
+  }
+]

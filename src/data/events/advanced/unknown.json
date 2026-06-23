@@ -1,0 +1,65 @@
+[
+  {
+    "id": "adv_unknown_small_answer",
+    "title": "一个不宏大的答案",
+    "category": "advanced",
+    "type": "identity",
+    "phase": [
+      "career_phase",
+      "graduation"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "unknown",
+      "escape"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 35,
+    "once": true,
+    "conditions": {
+      "minProgress": 70
+    },
+    "weightModifiers": [],
+    "text": "毕业前，你仍然没有一个能发朋友圈的大答案。但你开始知道什么会让你更像自己。",
+    "choices": [
+      {
+        "text": "接受答案可以很小",
+        "effects": {
+          "identity": 10,
+          "sanity": 5
+        },
+        "flagsAdd": [
+          "self_narrative"
+        ],
+        "furnitureAdd": [],
+        "resultText": "不是每个人的人生都需要一句slogan。"
+      },
+      {
+        "text": "继续寻找宏大目标",
+        "effects": {
+          "identity": 2,
+          "career": 2,
+          "sanity": -4
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "宏大目标很迷人，也很会拖延。"
+      },
+      {
+        "text": "把选择交给现实",
+        "effects": {
+          "career": 2,
+          "identity": -3,
+          "sanity": 1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "现实会给答案，但不一定温柔。"
+      }
+    ]
+  }
+]

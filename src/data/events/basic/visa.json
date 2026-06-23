@@ -1,0 +1,129 @@
+[
+  {
+    "id": "visa_agent_consult",
+    "title": "中介咨询",
+    "category": "basic",
+    "type": "visa",
+    "phase": [
+      "mid_semester",
+      "career_phase"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 25,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [
+      {
+        "condition": "visa <= 35",
+        "multiplier": 1.4
+      }
+    ],
+    "text": "你预约了签证中介。对方说“现在不准备就晚了”，这句话精准击中了你的恐惧账户。",
+    "choices": [
+      {
+        "text": "付费咨询",
+        "effects": {
+          "money": -12,
+          "visa": 6,
+          "sanity": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "信息清楚了一点，钱包空了一点。"
+      },
+      {
+        "text": "先自己研究官方信息",
+        "effects": {
+          "visa": 4,
+          "lifeSkill": 3,
+          "sanity": -4
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "官方网页不好读，但至少不会吓你成交。"
+      },
+      {
+        "text": "暂时不管",
+        "effects": {
+          "sanity": 4,
+          "visa": -5
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "焦虑延后了，风险没有。"
+      }
+    ]
+  },
+  {
+    "id": "visa_backup_plan",
+    "title": "备用路线",
+    "category": "basic",
+    "type": "visa",
+    "phase": [
+      "career_phase"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 28,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "你开始考虑备用路线：留下、回国、加拿大、读博、再读一个学位。每条路都像门，也像账单。",
+    "choices": [
+      {
+        "text": "列出Plan A/B/C",
+        "effects": {
+          "visa": 5,
+          "identity": 4,
+          "sanity": -3
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你不再只盯着一扇门。"
+      },
+      {
+        "text": "问朋友怎么选",
+        "effects": {
+          "social": 2,
+          "identity": 2,
+          "sanity": -1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "每个人都很真诚，但没人能替你活。"
+      },
+      {
+        "text": "继续拖延",
+        "effects": {
+          "sanity": 3,
+          "visa": -4,
+          "identity": -1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "拖延像一张软沙发，坐久了会陷进去。"
+      }
+    ]
+  }
+]

@@ -1,0 +1,137 @@
+[
+  {
+    "id": "work_milk_tea_trial",
+    "title": "奶茶店试工",
+    "category": "basic",
+    "type": "work",
+    "phase": [
+      "adapt",
+      "mid_semester",
+      "break"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 28,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [
+      {
+        "condition": "money <= 30",
+        "multiplier": 1.5
+      }
+    ],
+    "text": "你去奶茶店试工。店长说节奏很快，你点点头，心里想：我连Canvas都扛过。",
+    "choices": [
+      {
+        "text": "接下这份工",
+        "effects": {
+          "money": 10,
+          "english": 2,
+          "sanity": -5,
+          "gpa": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你学会了打奶盖，也学会了在忙乱中微笑。"
+      },
+      {
+        "text": "拒绝，专心学习",
+        "effects": {
+          "gpa": 4,
+          "sanity": 2,
+          "money": -3
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你保住了时间，钱包发出了轻微的叹息。"
+      },
+      {
+        "text": "只做假期班",
+        "effects": {
+          "money": 5,
+          "career": 1,
+          "sanity": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你给自己留了一点喘息空间。"
+      }
+    ]
+  },
+  {
+    "id": "work_due_after_shift",
+    "title": "打工后赶due",
+    "category": "basic",
+    "type": "work",
+    "phase": [
+      "exam"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 25,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [
+      {
+        "condition": "money <= 35",
+        "multiplier": 1.3
+      }
+    ],
+    "text": "你下班回家已经十点，due在23:59。电脑打开的瞬间，你感觉自己像在拆炸弹。",
+    "choices": [
+      {
+        "text": "硬写到提交",
+        "effects": {
+          "gpa": 4,
+          "money": 5,
+          "sanity": -10
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你提交了。文件名是final_final_reallyfinal。"
+      },
+      {
+        "text": "申请延期",
+        "effects": {
+          "english": 2,
+          "gpa": 2,
+          "sanity": -3,
+          "lifeSkill": 2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你开始理解：规则不是只用来害怕的。"
+      },
+      {
+        "text": "摆烂睡觉",
+        "effects": {
+          "sanity": 7,
+          "gpa": -12
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "睡眠赢了，成绩输了。"
+      }
+    ]
+  }
+]

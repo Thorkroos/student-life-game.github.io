@@ -1,0 +1,216 @@
+[
+  {
+    "id": "hidden_english_customer_win",
+    "title": "你把客服说沉默了",
+    "category": "hidden",
+    "type": "life",
+    "phase": [
+      "mid_semester",
+      "break",
+      "career_phase"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 32,
+    "once": true,
+    "conditions": {
+      "minProgress": 25,
+      "minStats": {
+        "english": 75
+      }
+    },
+    "weightModifiers": [],
+    "text": "你再次打给客服。这一次，你没有慌。你清楚地重复订单号、条款和诉求。电话那头沉默了两秒。",
+    "choices": [
+      {
+        "text": "继续据理力争",
+        "effects": {
+          "english": 3,
+          "lifeSkill": 4,
+          "sanity": 3
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你不是变凶了，你只是终于知道怎么表达边界。"
+      },
+      {
+        "text": "见好就收",
+        "effects": {
+          "sanity": 4,
+          "english": 1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你保住了结果，也保住了心情。"
+      }
+    ]
+  },
+  {
+    "id": "hidden_lifeskill_marketplace_king",
+    "title": "Facebook Marketplace之王",
+    "category": "hidden",
+    "type": "furniture",
+    "phase": [
+      "break",
+      "career_phase"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 28,
+    "once": true,
+    "conditions": {
+      "minProgress": 50,
+      "minStats": {
+        "lifeSkill": 75
+      }
+    },
+    "weightModifiers": [],
+    "text": "你现在能从二手平台照片里看出桌子的尺寸、卖家的诚意和搬运的痛苦程度。",
+    "choices": [
+      {
+        "text": "低价淘到好桌子",
+        "effects": {
+          "money": 3,
+          "lifeSkill": 4,
+          "sanity": 3
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [
+          "desk"
+        ],
+        "resultText": "你像一个家具猎人一样凯旋。"
+      },
+      {
+        "text": "顺手帮朋友搬家",
+        "effects": {
+          "social": 4,
+          "lifeSkill": 3,
+          "sanity": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你收获了友情，也收获了腰酸。"
+      }
+    ]
+  },
+  {
+    "id": "hidden_social_referral",
+    "title": "内推机会出现",
+    "category": "hidden",
+    "type": "career",
+    "phase": [
+      "career_phase"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 30,
+    "once": true,
+    "conditions": {
+      "minProgress": 70,
+      "minStats": {
+        "social": 75
+      }
+    },
+    "weightModifiers": [],
+    "text": "一个朋友说：“我可以帮你把简历递进去。” 你突然发现之前那些尴尬社交没有完全白费。",
+    "choices": [
+      {
+        "text": "认真跟进",
+        "effects": {
+          "career": 8,
+          "social": 2,
+          "sanity": -3
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "机会不会自动变成offer，但门确实开了一条缝。"
+      },
+      {
+        "text": "担心麻烦别人",
+        "effects": {
+          "career": -2,
+          "identity": 2,
+          "sanity": 1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你保持了礼貌，也可能错过了机会。"
+      }
+    ]
+  },
+  {
+    "id": "hidden_identity_boundary",
+    "title": "你第一次清楚拒绝别人",
+    "category": "hidden",
+    "type": "identity",
+    "phase": [
+      "mid_semester",
+      "break",
+      "career_phase"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 25,
+    "once": true,
+    "conditions": {
+      "minProgress": 40,
+      "minStats": {
+        "identity": 75
+      }
+    },
+    "weightModifiers": [],
+    "text": "有人试图把自己的计划、情绪或叙事塞给你。你突然听见自己说：“我不想这样。”",
+    "choices": [
+      {
+        "text": "坚持边界",
+        "effects": {
+          "identity": 6,
+          "sanity": 5,
+          "social": -1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你没有变冷漠，你只是终于没有把自己放到最后。"
+      },
+      {
+        "text": "温和解释",
+        "effects": {
+          "identity": 4,
+          "social": 2,
+          "sanity": 1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "边界不一定要用吼的，也可以清楚。"
+      }
+    ]
+  }
+]

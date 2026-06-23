@@ -1,0 +1,71 @@
+[
+  {
+    "id": "adv_love_define_relationship",
+    "title": "要不要确认关系",
+    "category": "advanced",
+    "type": "dating",
+    "phase": [
+      "break",
+      "career_phase"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 32,
+    "once": true,
+    "conditions": {
+      "minProgress": 55,
+      "minStats": {
+        "love": 35,
+        "social": 35
+      }
+    },
+    "weightModifiers": [],
+    "text": "你和某个人的聊天越来越稳定。稳定到你开始害怕：这到底是关系，还是只是你在异乡抓住的一根绳子？",
+    "choices": [
+      {
+        "text": "认真确认关系",
+        "effects": {
+          "love": 10,
+          "identity": 3,
+          "sanity": -2
+        },
+        "flagsAdd": [
+          "relationship_defined"
+        ],
+        "furnitureAdd": [],
+        "resultText": "你们没有解决所有问题，但至少开始诚实。"
+      },
+      {
+        "text": "保持暧昧",
+        "effects": {
+          "love": 3,
+          "sanity": 2,
+          "identity": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "暧昧像暖灯，不够亮，但容易舍不得关。"
+      },
+      {
+        "text": "选择先照顾自己",
+        "effects": {
+          "love": -2,
+          "identity": 7,
+          "sanity": 5
+        },
+        "flagsAdd": [
+          "single_choice"
+        ],
+        "furnitureAdd": [],
+        "resultText": "你没有错过人生，你只是没有把自己交出去。"
+      }
+    ]
+  }
+]

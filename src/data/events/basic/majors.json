@@ -1,0 +1,248 @@
+[
+  {
+    "id": "major_business_linkedin_photo",
+    "title": "LinkedIn头像要不要重拍",
+    "category": "basic",
+    "type": "career",
+    "phase": [
+      "mid_semester",
+      "career_phase"
+    ],
+    "majorTags": [
+      "business"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 35,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "Jason说你的LinkedIn头像“不够professional”。你看着自己的证件照，觉得它确实像刚被海关审完。",
+    "choices": [
+      {
+        "text": "花钱拍职业照",
+        "effects": {
+          "money": -8,
+          "career": 5,
+          "social": 2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "照片很好，你甚至短暂相信自己是职场人。"
+      },
+      {
+        "text": "用手机靠墙自拍",
+        "effects": {
+          "career": 2,
+          "lifeSkill": 2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "背景是白墙，眼神是deadline。"
+      },
+      {
+        "text": "先把经历写好",
+        "effects": {
+          "career": 4,
+          "sanity": -2,
+          "identity": 2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你决定先让内容比头像更像人。"
+      }
+    ]
+  },
+  {
+    "id": "major_social_theory_vs_rent",
+    "title": "理论解释不了退租",
+    "category": "basic",
+    "type": "identity",
+    "phase": [
+      "mid_semester",
+      "exam"
+    ],
+    "majorTags": [
+      "social_science"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 35,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "你发现理论能解释权力结构，但不能直接让房东退bond。",
+    "choices": [
+      {
+        "text": "研究租房法规",
+        "effects": {
+          "lifeSkill": 5,
+          "identity": 2,
+          "sanity": -3
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "理论落地的一刻，叫合同条款。"
+      },
+      {
+        "text": "写一段朋友圈感想",
+        "effects": {
+          "identity": 3,
+          "social": 2,
+          "sanity": 1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "点赞不少，bond还在那里。"
+      },
+      {
+        "text": "找学生服务求助",
+        "effects": {
+          "english": 2,
+          "lifeSkill": 4,
+          "sanity": -1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你获得了真正有用的链接。"
+      }
+    ]
+  },
+  {
+    "id": "major_art_critique_silence",
+    "title": "Critique课上老师沉默了十秒",
+    "category": "basic",
+    "type": "school",
+    "phase": [
+      "exam"
+    ],
+    "majorTags": [
+      "art"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 35,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "老师看着你的作品沉默了十秒。那十秒里，你已经把自己从艺术史里删除了三次。",
+    "choices": [
+      {
+        "text": "主动解释创作逻辑",
+        "effects": {
+          "english": 3,
+          "gpa": 4,
+          "identity": 3,
+          "sanity": -3
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你发现解释作品也是作品的一部分。"
+      },
+      {
+        "text": "假装这是留白",
+        "effects": {
+          "identity": 4,
+          "gpa": -2,
+          "sanity": 1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "有时候，沉默也可以被包装。"
+      },
+      {
+        "text": "课后重做一版",
+        "effects": {
+          "gpa": 6,
+          "sanity": -7,
+          "money": -3
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "材料费再次提醒你：艺术不是免费的。"
+      }
+    ]
+  },
+  {
+    "id": "major_education_observation",
+    "title": "Classroom observation第一天",
+    "category": "basic",
+    "type": "career",
+    "phase": [
+      "mid_semester"
+    ],
+    "majorTags": [
+      "education"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 35,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "你第一次进入本地课堂观察。小朋友问你：“Are you a real teacher?” 你也很想知道。",
+    "choices": [
+      {
+        "text": "认真记录课堂互动",
+        "effects": {
+          "gpa": 4,
+          "career": 3,
+          "identity": 2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你写下的不只是观察，也是未来可能的自己。"
+      },
+      {
+        "text": "主动和mentor teacher交流",
+        "effects": {
+          "english": 4,
+          "career": 4,
+          "sanity": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你的英语有点卡，但态度很清楚。"
+      },
+      {
+        "text": "躲在角落安静观察",
+        "effects": {
+          "sanity": 2,
+          "gpa": 2,
+          "english": -1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你观察了很多，也错过了一些连接。"
+      }
+    ]
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "adv_stay_graduate_visa",
+    "title": "毕业签证选择",
+    "category": "advanced",
+    "type": "visa",
+    "phase": [
+      "career_phase",
+      "graduation"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "stay"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 36,
+    "once": true,
+    "conditions": {
+      "minProgress": 70,
+      "minStats": {
+        "visa": 45
+      }
+    },
+    "weightModifiers": [],
+    "text": "毕业签证页面打开了。你第一次感觉“毕业”不是终点，而是另一个倒计时的开始。",
+    "choices": [
+      {
+        "text": "按计划准备材料",
+        "effects": {
+          "visa": 8,
+          "money": -6,
+          "sanity": -4
+        },
+        "flagsAdd": [
+          "graduate_visa_ready"
+        ],
+        "furnitureAdd": [],
+        "resultText": "材料清单很长，但你至少知道下一步。"
+      },
+      {
+        "text": "先找工作再说",
+        "effects": {
+          "career": 4,
+          "visa": -3,
+          "sanity": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你把希望押在了offer上。"
+      },
+      {
+        "text": "认真考虑回国备选",
+        "effects": {
+          "identity": 5,
+          "visa": 2,
+          "career": 2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "备选不是失败，是你给自己留的门。"
+      }
+    ]
+  }
+]

@@ -1,0 +1,376 @@
+[
+  {
+    "id": "goal_stay_pr_search",
+    "title": "第一次查PR路径",
+    "category": "basic",
+    "type": "visa",
+    "phase": [
+      "adapt",
+      "mid_semester"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "stay"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 40,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "你第一次认真搜索留下来的路径。网页打开得很快，你的心沉得也很快。",
+    "choices": [
+      {
+        "text": "做一个现实路线表",
+        "effects": {
+          "visa": 5,
+          "career": 2,
+          "sanity": -4,
+          "identity": 2
+        },
+        "flagsAdd": [
+          "visa_plan_started"
+        ],
+        "furnitureAdd": [],
+        "resultText": "你发现焦虑最好被拆成表格。"
+      },
+      {
+        "text": "关掉页面，假装没看见",
+        "effects": {
+          "sanity": 4,
+          "visa": -4
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "问题没有消失，只是换了个标签页。"
+      },
+      {
+        "text": "去论坛看经验贴",
+        "effects": {
+          "visa": 2,
+          "sanity": -6
+        },
+        "flagsAdd": [
+          "visa_forum_spiral"
+        ],
+        "furnitureAdd": [],
+        "resultText": "你看到了十种路径和二十种恐慌。"
+      }
+    ]
+  },
+  {
+    "id": "goal_return_autumn_recruitment",
+    "title": "国内秋招信息刷屏",
+    "category": "basic",
+    "type": "career",
+    "phase": [
+      "career_phase"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "return_home"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 40,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "国内秋招信息突然刷屏。你一边看时差，一边怀疑自己是不是错过了另一个宇宙的时间线。",
+    "choices": [
+      {
+        "text": "开始整理中文简历",
+        "effects": {
+          "career": 6,
+          "identity": 3,
+          "sanity": -3
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你把经历翻译成中文，也在翻译自己这几年。"
+      },
+      {
+        "text": "继续观望",
+        "effects": {
+          "sanity": 2,
+          "career": -4
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "观望有时是策略，有时只是拖延换了件衣服。"
+      },
+      {
+        "text": "联系国内朋友打听",
+        "effects": {
+          "social": 3,
+          "career": 4,
+          "identity": 1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "信息差减少了一点，焦虑没有完全减少。"
+      }
+    ]
+  },
+  {
+    "id": "goal_money_weekend_work",
+    "title": "周末打工还是写作业",
+    "category": "basic",
+    "type": "work",
+    "phase": [
+      "mid_semester",
+      "exam"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "money"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 40,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "老板问你周末能不能加班。Canvas提醒你周一有due。两个通知都很礼貌，但都没有人性。",
+    "choices": [
+      {
+        "text": "去打工",
+        "effects": {
+          "money": 10,
+          "sanity": -5,
+          "gpa": -5,
+          "lifeSkill": 2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "钱到账了，due也更近了。"
+      },
+      {
+        "text": "留在家写作业",
+        "effects": {
+          "gpa": 6,
+          "money": -3,
+          "sanity": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你没有赚钱，但保住了一点学术尊严。"
+      },
+      {
+        "text": "只接半天班",
+        "effects": {
+          "money": 5,
+          "gpa": 2,
+          "sanity": -4
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "成年人最常见的胜利：两边都没完全死。"
+      }
+    ]
+  },
+  {
+    "id": "goal_phd_supervisor_homepage",
+    "title": "你开始看导师主页",
+    "category": "basic",
+    "type": "career",
+    "phase": [
+      "break",
+      "career_phase"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "phd"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 40,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "你打开导师主页，看到publication list往下滚了三屏。你突然觉得读博像一条很窄但很长的走廊。",
+    "choices": [
+      {
+        "text": "认真筛导师方向",
+        "effects": {
+          "gpa": 4,
+          "career": 4,
+          "identity": 3,
+          "sanity": -4
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你第一次把“读博”从幻想拆成行动。"
+      },
+      {
+        "text": "先收藏以后再看",
+        "effects": {
+          "sanity": 2,
+          "career": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "收藏夹是现代人的临时墓地。"
+      },
+      {
+        "text": "给潜在导师发邮件",
+        "effects": {
+          "english": 4,
+          "career": 5,
+          "sanity": -5
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "发送按钮按下去之后，你听见了自己的心跳。"
+      }
+    ]
+  },
+  {
+    "id": "goal_love_first_match",
+    "title": "Dating app第一次匹配",
+    "category": "basic",
+    "type": "dating",
+    "phase": [
+      "adapt",
+      "mid_semester",
+      "break"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "love"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 40,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "你第一次在dating app上match成功。对方第一句是“hey”。这三个字母承担了过多社交期待。",
+    "choices": [
+      {
+        "text": "认真回复",
+        "effects": {
+          "love": 5,
+          "english": 2,
+          "sanity": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "对话开始了，虽然像两台礼貌机器在互相试探。"
+      },
+      {
+        "text": "等对方继续说",
+        "effects": {
+          "sanity": 1,
+          "love": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你们共同维护了互联网沉默。"
+      },
+      {
+        "text": "直接约咖啡",
+        "effects": {
+          "love": 6,
+          "social": 2,
+          "sanity": -4
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "效率很高，心跳也很高。"
+      }
+    ]
+  },
+  {
+    "id": "goal_unknown_everyone_plan",
+    "title": "每个人看起来都有目标",
+    "category": "basic",
+    "type": "identity",
+    "phase": [
+      "adapt",
+      "mid_semester"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "unknown",
+      "escape"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 40,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "身边的人有人要PR，有人要大厂，有人要读博。你点点头，像一个还没加载出主线任务的NPC。",
+    "choices": [
+      {
+        "text": "列出自己不想要什么",
+        "effects": {
+          "identity": 5,
+          "sanity": 1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "排除法也是一种诚实。"
+      },
+      {
+        "text": "假装自己也很确定",
+        "effects": {
+          "social": 2,
+          "identity": -3,
+          "sanity": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "演得越像，晚上越空。"
+      },
+      {
+        "text": "和朋友聊聊迷茫",
+        "effects": {
+          "social": 3,
+          "identity": 4,
+          "sanity": 2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你发现不是只有你没有答案。"
+      }
+    ]
+  }
+]

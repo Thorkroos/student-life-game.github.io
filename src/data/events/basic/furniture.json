@@ -1,0 +1,208 @@
+[
+  {
+    "id": "furniture_secondhand_mattress",
+    "title": "二手床垫交易",
+    "category": "basic",
+    "type": "furniture",
+    "phase": [
+      "adapt",
+      "mid_semester",
+      "break"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 32,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "你在二手平台看到一个床垫，卖家说“almost new”。照片里它看起来像经历过三届房客。",
+    "choices": [
+      {
+        "text": "砍价并自取",
+        "effects": {
+          "money": -6,
+          "lifeSkill": 4,
+          "sanity": -2
+        },
+        "flagsAdd": [
+          "marketplace_deal"
+        ],
+        "furnitureAdd": [
+          "secondhand_mattress"
+        ],
+        "resultText": "你拖着床垫走在路上，像一个刚搬家的蜗牛。"
+      },
+      {
+        "text": "原价让对方送货",
+        "effects": {
+          "money": -12,
+          "sanity": 2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [
+          "secondhand_mattress"
+        ],
+        "resultText": "钱换来了体面，至少你没有在路边和床垫搏斗。"
+      },
+      {
+        "text": "继续睡地毯",
+        "effects": {
+          "money": 2,
+          "sanity": -3,
+          "identity": 1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "地毯再次接纳了你。"
+      }
+    ]
+  },
+  {
+    "id": "furniture_ikea_missing_screw",
+    "title": "IKEA少螺丝",
+    "category": "basic",
+    "type": "furniture",
+    "phase": [
+      "mid_semester",
+      "break"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 30,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "你组装IKEA床架到最后一步，发现少了一颗关键螺丝。说明书上的小人依然微笑，像在嘲讽。",
+    "choices": [
+      {
+        "text": "联系客服补件",
+        "effects": {
+          "english": 2,
+          "lifeSkill": 3,
+          "sanity": -3
+        },
+        "flagsAdd": [
+          "ikea_missing_screw"
+        ],
+        "furnitureAdd": [
+          "ikea_bed"
+        ],
+        "resultText": "你获得了一颗螺丝，也获得了对客服流程的理解。"
+      },
+      {
+        "text": "去五金店配一个",
+        "effects": {
+          "money": -3,
+          "lifeSkill": 5,
+          "sanity": -1
+        },
+        "flagsAdd": [
+          "ikea_missing_screw"
+        ],
+        "furnitureAdd": [
+          "ikea_bed"
+        ],
+        "resultText": "你走进五金店的那一刻，生活熟练度升级了。"
+      },
+      {
+        "text": "先用箱子垫着",
+        "effects": {
+          "money": 1,
+          "sanity": -4
+        },
+        "flagsAdd": [
+          "ikea_missing_screw"
+        ],
+        "furnitureAdd": [],
+        "resultText": "床没有塌，但你的信任塌了一点。"
+      }
+    ]
+  },
+  {
+    "id": "furniture_rice_cooker",
+    "title": "电饭煲入手",
+    "category": "basic",
+    "type": "furniture",
+    "phase": [
+      "adapt",
+      "mid_semester",
+      "break"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 25,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "你终于决定买电饭煲。它不只是电器，是一种东亚胃的基础设施。",
+    "choices": [
+      {
+        "text": "买基础款",
+        "effects": {
+          "money": -8,
+          "lifeSkill": 4,
+          "sanity": 4
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [
+          "rice_cooker"
+        ],
+        "resultText": "第一锅饭熟的时候，你短暂觉得自己有家了。"
+      },
+      {
+        "text": "买高级款",
+        "effects": {
+          "money": -16,
+          "lifeSkill": 3,
+          "sanity": 6
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [
+          "rice_cooker"
+        ],
+        "resultText": "它甚至会唱歌。你觉得它比你更适应澳洲。"
+      },
+      {
+        "text": "继续外卖",
+        "effects": {
+          "money": -8,
+          "sanity": 2,
+          "lifeSkill": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "快乐很快，账单也很快。"
+      }
+    ]
+  }
+]

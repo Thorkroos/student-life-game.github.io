@@ -1,0 +1,29 @@
+{
+  "basic": [
+    "basic/arrival.json",
+    "basic/school.json",
+    "basic/majors.json",
+    "basic/goals.json",
+    "basic/life.json",
+    "basic/furniture.json",
+    "basic/social.json",
+    "basic/work.json",
+    "basic/career.json",
+    "basic/visa.json",
+    "basic/family.json",
+    "basic/identity.json"
+  ],
+  "hidden": [
+    "hidden/highStats.json",
+    "hidden/lowStats.json"
+  ],
+  "advanced": [
+    "advanced/stay.json",
+    "advanced/returnHome.json",
+    "advanced/money.json",
+    "advanced/phd.json",
+    "advanced/love.json",
+    "advanced/career.json",
+    "advanced/unknown.json"
+  ]
+}

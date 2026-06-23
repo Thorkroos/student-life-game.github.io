@@ -1,0 +1,325 @@
+[
+  {
+    "id": "school_first_seminar",
+    "title": "第一次seminar",
+    "category": "basic",
+    "type": "school",
+    "phase": [
+      "adapt"
+    ],
+    "majorTags": [
+      "social_science",
+      "education",
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 35,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "老师问：“Any thoughts?” 全班空气安静得像签证系统维护页面。",
+    "choices": [
+      {
+        "text": "鼓起勇气说一句",
+        "effects": {
+          "english": 4,
+          "gpa": 3,
+          "sanity": -3
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你的句子不完美，但空气终于流动了一下。"
+      },
+      {
+        "text": "低头假装记笔记",
+        "effects": {
+          "sanity": 2,
+          "english": -1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你的笔记上写着：Any thoughts = no thoughts。"
+      },
+      {
+        "text": "课后发邮件补充想法",
+        "effects": {
+          "english": 3,
+          "gpa": 3,
+          "lifeSkill": 1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你发现课堂发言不是唯一入口。"
+      }
+    ]
+  },
+  {
+    "id": "school_kyle_missing",
+    "title": "Kyle消失了",
+    "category": "basic",
+    "type": "school",
+    "phase": [
+      "mid_semester",
+      "exam"
+    ],
+    "majorTags": [
+      "business",
+      "stem",
+      "education",
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 45,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "小组作业今晚11:59截止，Kyle已经三天没回消息。但你刚刚看到他朋友圈发了健身房自拍。",
+    "choices": [
+      {
+        "text": "自己全写了",
+        "effects": {
+          "gpa": 8,
+          "sanity": -12,
+          "social": -2
+        },
+        "flagsAdd": [
+          "kyle_missing",
+          "carried_group_project"
+        ],
+        "furnitureAdd": [],
+        "resultText": "你保住了分数，也失去了一点对人类协作的信任。"
+      },
+      {
+        "text": "给老师发邮件说明分工",
+        "effects": {
+          "english": 2,
+          "gpa": 4,
+          "sanity": -4,
+          "lifeSkill": 3
+        },
+        "flagsAdd": [
+          "academic_self_advocacy"
+        ],
+        "furnitureAdd": [],
+        "resultText": "这封邮件不够优雅，但足够清楚。"
+      },
+      {
+        "text": "在群里阴阳怪气",
+        "effects": {
+          "sanity": 3,
+          "social": -5
+        },
+        "flagsAdd": [
+          "group_chat_conflict"
+        ],
+        "furnitureAdd": [],
+        "resultText": "你爽了五分钟，随后开始担心截图会不会流传。"
+      }
+    ]
+  },
+  {
+    "id": "school_plagiarism_warning",
+    "title": "学术诚信警告",
+    "category": "basic",
+    "type": "school",
+    "phase": [
+      "adapt",
+      "mid_semester",
+      "exam"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 25,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "系统弹出学术诚信提醒。它的语气像一个看透你凌晨三点复制粘贴冲动的电子班主任。",
+    "choices": [
+      {
+        "text": "认真检查引用",
+        "effects": {
+          "gpa": 4,
+          "sanity": -4,
+          "lifeSkill": 2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你多花了一小时，但少做了一个噩梦。"
+      },
+      {
+        "text": "相信自己的直觉",
+        "effects": {
+          "sanity": 2,
+          "gpa": -6
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "直觉有时很准，但引用格式不吃这套。"
+      },
+      {
+        "text": "去问learning advisor",
+        "effects": {
+          "english": 2,
+          "gpa": 5,
+          "social": 1,
+          "sanity": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你发现求助不是丢脸，是系统功能。"
+      }
+    ]
+  },
+  {
+    "id": "school_reading_overload",
+    "title": "阅读材料堆成山",
+    "category": "basic",
+    "type": "school",
+    "phase": [
+      "adapt",
+      "mid_semester"
+    ],
+    "majorTags": [
+      "social_science",
+      "education",
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 30,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "这周reading list像一份可以直接防身的PDF清单。你打开第一篇，第一句话就有三个你不想认识的理论家。",
+    "choices": [
+      {
+        "text": "全部精读",
+        "effects": {
+          "gpa": 7,
+          "sanity": -8,
+          "identity": 2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你读懂了一半，也老了两岁。"
+      },
+      {
+        "text": "读摘要和结论",
+        "effects": {
+          "gpa": 3,
+          "sanity": 1,
+          "lifeSkill": 2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "这不完美，但很留学生。"
+      },
+      {
+        "text": "组织同学分工读",
+        "effects": {
+          "social": 4,
+          "gpa": 4,
+          "sanity": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你们建立了一个短暂但实用的知识联盟。"
+      }
+    ]
+  },
+  {
+    "id": "school_project_bug",
+    "title": "项目demo前夜bug复活",
+    "category": "basic",
+    "type": "school",
+    "phase": [
+      "exam"
+    ],
+    "majorTags": [
+      "stem",
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 28,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "项目demo前一晚，那个你以为已经修好的bug，以一种很有生命力的姿态回来了。",
+    "choices": [
+      {
+        "text": "熬夜修",
+        "effects": {
+          "gpa": 7,
+          "career": 3,
+          "sanity": -10
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "凌晨三点，你和bug之间产生了某种畸形亲密。"
+      },
+      {
+        "text": "降低demo范围",
+        "effects": {
+          "gpa": 2,
+          "sanity": 2,
+          "lifeSkill": 3
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你学会了一个成年技能：砍scope。"
+      },
+      {
+        "text": "找队友一起debug",
+        "effects": {
+          "social": 3,
+          "gpa": 4,
+          "sanity": -3
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "队友没有救你，但至少陪你一起沉默。"
+      }
+    ]
+  }
+]

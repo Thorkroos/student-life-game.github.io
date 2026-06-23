@@ -1,0 +1,20 @@
+[
+  {
+    "id": "one_year",
+    "label": "一年制",
+    "maxTurns": 26,
+    "description": "节奏快，压力高，准备时间短。"
+  },
+  {
+    "id": "one_and_half_year",
+    "label": "一年半",
+    "maxTurns": 32,
+    "description": "节奏适中，适合默认体验。"
+  },
+  {
+    "id": "two_year",
+    "label": "两年制",
+    "maxTurns": 40,
+    "description": "内容完整，支线更多，Money 和 Sanity 消耗更明显。"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "business",
+    "label": "商科",
+    "description": "小组作业、career fair、社交、人脉、LinkedIn 事件更多。",
+    "effects": {
+      "social": 5,
+      "career": 5,
+      "gpa": -2
+    }
+  },
+  {
+    "id": "social_science",
+    "label": "社科",
+    "description": "seminar、阅读、理论文本和朋友圈观点事件更多。",
+    "effects": {
+      "gpa": 5,
+      "identity": 4,
+      "sanity": -4
+    }
+  },
+  {
+    "id": "art",
+    "label": "艺术",
+    "description": "创作、展览、亚文化、灵感缪斯和 Money 压力更多。",
+    "effects": {
+      "identity": 6,
+      "social": 3,
+      "money": -5
+    }
+  },
+  {
+    "id": "stem",
+    "label": "理工",
+    "description": "项目、作业、技术面试和熬夜事件更多。",
+    "effects": {
+      "career": 6,
+      "gpa": 3,
+      "social": -4
+    }
+  },
+  {
+    "id": "education",
+    "label": "教育",
+    "description": "reflection、课堂观察、英语沟通和职业伦理事件更多。",
+    "effects": {
+      "gpa": 5,
+      "english": 4,
+      "identity": 2
+    }
+  }
+]

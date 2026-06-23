@@ -1,0 +1,184 @@
+[
+  {
+    "id": "career_resume_first",
+    "title": "第一次写英文简历",
+    "category": "basic",
+    "type": "career",
+    "phase": [
+      "mid_semester",
+      "career_phase"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 35,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "你打开英文简历模板，发现自己过去的人生需要被压缩成一页A4纸，还要显得很有impact。",
+    "choices": [
+      {
+        "text": "认真改简历",
+        "effects": {
+          "career": 6,
+          "english": 2,
+          "sanity": -3
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你把“参与”改成“contributed to”，人生突然专业了一点。"
+      },
+      {
+        "text": "找朋友帮看",
+        "effects": {
+          "career": 4,
+          "social": 3,
+          "sanity": -1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "朋友划掉了三句废话，也救了你。"
+      },
+      {
+        "text": "先放着以后再说",
+        "effects": {
+          "sanity": 2,
+          "career": -4
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "以后是一个很危险的文件夹。"
+      }
+    ]
+  },
+  {
+    "id": "career_fair",
+    "title": "Career fair尴尬聊天",
+    "category": "basic",
+    "type": "career",
+    "phase": [
+      "career_phase"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 30,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "Career fair现场，每个人都穿得像已经上岸。你握着简历，感觉自己像误入招聘会的游客。",
+    "choices": [
+      {
+        "text": "主动和recruiter聊天",
+        "effects": {
+          "career": 6,
+          "english": 4,
+          "sanity": -4
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你说得有点磕绊，但比沉默更接近机会。"
+      },
+      {
+        "text": "只拿纪念品",
+        "effects": {
+          "money": 1,
+          "sanity": 3,
+          "career": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你获得了一支笔，但没有获得未来。"
+      },
+      {
+        "text": "观察别人怎么networking",
+        "effects": {
+          "career": 3,
+          "lifeSkill": 2,
+          "sanity": 1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "偷学也是学习。"
+      }
+    ]
+  },
+  {
+    "id": "career_rejection_email",
+    "title": "自动拒信",
+    "category": "basic",
+    "type": "career",
+    "phase": [
+      "career_phase"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 25,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "你收到一封邮件：After careful consideration... 后面的内容你已经不需要看了。",
+    "choices": [
+      {
+        "text": "继续投下一家",
+        "effects": {
+          "career": 4,
+          "sanity": -3,
+          "identity": 2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "拒信没有杀死你，它只是给你的Excel多加一行。"
+      },
+      {
+        "text": "怀疑人生一晚",
+        "effects": {
+          "sanity": -5,
+          "identity": 1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你允许自己难过，但天亮还是来了。"
+      },
+      {
+        "text": "找人复盘简历",
+        "effects": {
+          "career": 5,
+          "social": 2,
+          "sanity": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你发现失败也能被拆解。"
+      }
+    ]
+  }
+]

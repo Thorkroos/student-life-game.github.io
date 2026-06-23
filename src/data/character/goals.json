@@ -1,0 +1,127 @@
+[
+  {
+    "id": "stay",
+    "label": "我要留下",
+    "description": "Visa、Career、English 是关键。",
+    "effects": {
+      "visa": 8,
+      "career": 4,
+      "sanity": -3
+    },
+    "scoreWeights": {
+      "visa": 0.3,
+      "career": 0.25,
+      "english": 0.15,
+      "money": 0.1,
+      "sanity": 0.1,
+      "identity": 0.1
+    }
+  },
+  {
+    "id": "return_home",
+    "label": "我要镀金回国",
+    "description": "GPA、Career、Identity 是关键。",
+    "effects": {
+      "gpa": 4,
+      "career": 4,
+      "identity": 3
+    },
+    "scoreWeights": {
+      "career": 0.25,
+      "gpa": 0.25,
+      "identity": 0.2,
+      "english": 0.1,
+      "sanity": 0.1,
+      "money": 0.1
+    }
+  },
+  {
+    "id": "money",
+    "label": "我要搞钱",
+    "description": "Money、Career、Life Skill 是关键。",
+    "effects": {
+      "money": 6,
+      "career": 4,
+      "sanity": -3
+    },
+    "scoreWeights": {
+      "money": 0.3,
+      "career": 0.25,
+      "lifeSkill": 0.15,
+      "english": 0.1,
+      "sanity": 0.1,
+      "identity": 0.1
+    }
+  },
+  {
+    "id": "phd",
+    "label": "我要读博",
+    "description": "GPA、Identity、English 是关键。",
+    "effects": {
+      "gpa": 8,
+      "identity": 4,
+      "money": -3
+    },
+    "scoreWeights": {
+      "gpa": 0.35,
+      "identity": 0.2,
+      "english": 0.15,
+      "career": 0.15,
+      "sanity": 0.1,
+      "money": 0.05
+    }
+  },
+  {
+    "id": "love",
+    "label": "我要找对象",
+    "description": "Love、Identity、Social 是关键。",
+    "effects": {
+      "social": 5,
+      "love": 8,
+      "gpa": -2
+    },
+    "scoreWeights": {
+      "love": 0.3,
+      "identity": 0.2,
+      "social": 0.15,
+      "sanity": 0.15,
+      "english": 0.1,
+      "lifeSkill": 0.1
+    }
+  },
+  {
+    "id": "escape",
+    "label": "我要逃离原来的生活",
+    "description": "Identity、Sanity、Life Skill 是关键。",
+    "effects": {
+      "identity": 5,
+      "sanity": -2,
+      "lifeSkill": 3
+    },
+    "scoreWeights": {
+      "identity": 0.3,
+      "sanity": 0.2,
+      "lifeSkill": 0.15,
+      "career": 0.15,
+      "social": 0.1,
+      "money": 0.1
+    }
+  },
+  {
+    "id": "unknown",
+    "label": "我不知道，我只是来了",
+    "description": "Identity 是核心。你需要在游戏里找到答案。",
+    "effects": {
+      "identity": -2,
+      "sanity": 2
+    },
+    "scoreWeights": {
+      "identity": 0.4,
+      "sanity": 0.15,
+      "career": 0.15,
+      "social": 0.1,
+      "lifeSkill": 0.1,
+      "gpa": 0.1
+    }
+  }
+]

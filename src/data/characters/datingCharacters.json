@@ -1,0 +1,78 @@
+[
+  {
+    "id": "jason",
+    "label": "Jason",
+    "tags": [
+      "chinese",
+      "business",
+      "social"
+    ],
+    "description": "商科上海潮牌男，身边常出现Kyle、Alex、Richard。"
+  },
+  {
+    "id": "zheng",
+    "label": "大郑哥",
+    "tags": [
+      "chinese",
+      "studio",
+      "fitness"
+    ],
+    "description": "自称有特殊背景，言必提自己住studio。"
+  },
+  {
+    "id": "axuan",
+    "label": "阿轩",
+    "tags": [
+      "chinese",
+      "social_science",
+      "anime"
+    ],
+    "description": "seminar不发一语，但朋友圈观点很活跃。"
+  },
+  {
+    "id": "k",
+    "label": "K",
+    "tags": [
+      "chinese",
+      "art",
+      "muse"
+    ],
+    "description": "半糖主义亚文化艺术学长，据说K就是真名。"
+  },
+  {
+    "id": "luke",
+    "label": "Luke",
+    "tags": [
+      "foreign",
+      "english"
+    ],
+    "description": "英语提高后更容易自然遇到的dating对象。"
+  },
+  {
+    "id": "muhammad",
+    "label": "Muhammad",
+    "tags": [
+      "foreign",
+      "values"
+    ],
+    "description": "价值观、家庭和生活方式对话更多。"
+  },
+  {
+    "id": "anand",
+    "label": "Anand",
+    "tags": [
+      "foreign",
+      "career"
+    ],
+    "description": "职业规划和未来路径对话更多。"
+  },
+  {
+    "id": "vladimir",
+    "label": "Vladimir",
+    "tags": [
+      "foreign",
+      "philosophy"
+    ],
+    "description": "冷幽默、孤独和人生意义对话更多。"
+  }
+]

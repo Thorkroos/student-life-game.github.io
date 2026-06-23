@@ -1,0 +1,66 @@
+[
+  {
+    "id": "adv_money_what_is_enough",
+    "title": "什么才算赚够",
+    "category": "advanced",
+    "type": "money",
+    "phase": [
+      "career_phase",
+      "graduation"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "money"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 34,
+    "once": true,
+    "conditions": {
+      "minProgress": 70,
+      "minStats": {
+        "money": 45
+      }
+    },
+    "weightModifiers": [],
+    "text": "你存下了一些钱，也失去过一些周末。你开始问自己：到底赚到多少，才算没有白来？",
+    "choices": [
+      {
+        "text": "继续冲收入",
+        "effects": {
+          "money": 8,
+          "career": 4,
+          "sanity": -5
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "数字增长很快，疲惫也很诚实。"
+      },
+      {
+        "text": "给生活留一点空间",
+        "effects": {
+          "sanity": 6,
+          "identity": 5,
+          "money": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你第一次没有把休息当成偷懒。"
+      },
+      {
+        "text": "把钱变成下一步计划",
+        "effects": {
+          "money": 2,
+          "career": 4,
+          "identity": 4
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "钱不只是安全感，也可以是选择权。"
+      }
+    ]
+  }
+]

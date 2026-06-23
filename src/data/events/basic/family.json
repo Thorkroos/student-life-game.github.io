@@ -1,0 +1,126 @@
+[
+  {
+    "id": "family_video_call",
+    "title": "和家里视频",
+    "category": "basic",
+    "type": "family",
+    "phase": [
+      "adapt",
+      "mid_semester",
+      "exam",
+      "career_phase"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 26,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "家里打来视频。你把镜头对准上半身，避开还没装好的床架和角落里的外卖袋。",
+    "choices": [
+      {
+        "text": "报喜不报忧",
+        "effects": {
+          "sanity": -2,
+          "identity": -2,
+          "money": 1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你让他们放心，也把真实的自己暂时静音了。"
+      },
+      {
+        "text": "说一点真实情况",
+        "effects": {
+          "sanity": 3,
+          "identity": 3
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "屏幕那头沉默了一下，然后说：慢慢来。"
+      },
+      {
+        "text": "开口要钱",
+        "effects": {
+          "money": 10,
+          "sanity": -2,
+          "identity": -4
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "钱到账了，自尊心也被轻轻划了一下。"
+      }
+    ]
+  },
+  {
+    "id": "family_return_expectation",
+    "title": "家里暗示你回国",
+    "category": "basic",
+    "type": "family",
+    "phase": [
+      "career_phase",
+      "graduation"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 22,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "家里说：“其实回来也挺好。” 这句话没有错，但你听出了很多没说出口的期待。",
+    "choices": [
+      {
+        "text": "认真讨论回国计划",
+        "effects": {
+          "career": 3,
+          "identity": 5,
+          "sanity": -1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "回国第一次从退路变成了选项。"
+      },
+      {
+        "text": "转移话题",
+        "effects": {
+          "sanity": 2,
+          "identity": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你躲过了这通电话，没有躲过这个问题。"
+      },
+      {
+        "text": "解释自己还想试试留下",
+        "effects": {
+          "visa": 3,
+          "identity": 3,
+          "sanity": -3
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你的声音有点抖，但那是你的声音。"
+      }
+    ]
+  }
+]

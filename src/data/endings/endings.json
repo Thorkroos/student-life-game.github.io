@@ -1,0 +1,93 @@
+[
+  {
+    "id": "ending_offer",
+    "type": "HE",
+    "title": "Offer上岸",
+    "description": "你终于收到了一封不是自动拒信的邮件。落地灯还在，但你已经不再只靠它撑过夜晚。",
+    "summary": "职业路线完成度高，你用一堆不完美的选择换来了一条真实的路。"
+  },
+  {
+    "id": "ending_return_home",
+    "type": "HE",
+    "title": "回国机票不是失败",
+    "description": "你买下回国机票。不是因为输了，而是因为你终于知道自己要把这段经历带回哪里。",
+    "summary": "回国在这条路线中不是撤退，而是目标完成。"
+  },
+  {
+    "id": "ending_real_room",
+    "type": "HE",
+    "title": "从地毯到真正的房间",
+    "description": "房间里终于有床、桌子、椅子和热饭。你没有赢得世界，但你搭出了一个能安放自己的角落。",
+    "summary": "生活成长型结局。你把生存变成了生活。"
+  },
+  {
+    "id": "ending_find_direction",
+    "type": "HE",
+    "title": "我终于知道我要去哪",
+    "description": "你没有获得所有答案，但你终于能分辨哪些声音是别人的，哪些是自己的。",
+    "summary": "Identity路线成功，迷茫被转化为选择。"
+  },
+  {
+    "id": "ending_love_self",
+    "type": "HE",
+    "title": "爱不是主线，但你没有错过人生",
+    "description": "有人来过，有人离开。最后你发现，能认真爱别人之前，先不要把自己弄丢。",
+    "summary": "恋爱或单身都可以成立，关键是你拿回了叙事权。"
+  },
+  {
+    "id": "ending_stay_not_imagined",
+    "type": "NE",
+    "title": "留下，但不是你想象的那种留下",
+    "description": "你确实留下来了。但留下不是电影结尾，而是下一轮账单、申请、面试和自我怀疑。",
+    "summary": "目标部分完成，但代价不小。"
+  },
+  {
+    "id": "ending_linkedin_warrior",
+    "type": "NE",
+    "title": "LinkedIn战神",
+    "description": "你的主页看起来非常专业，动态也很积极。只是offer暂时还没有像点赞一样出现。",
+    "summary": "社交声量高，但career落地不足。"
+  },
+  {
+    "id": "ending_single_mainline",
+    "type": "NE",
+    "title": "恋爱支线关闭，但人生主线开启",
+    "description": "你没有进入稳定恋爱结局。但某个晚上，你在自己的房间里吃着热饭，突然觉得这也不是坏事。",
+    "summary": "单身不是失败。它只是另一种生活路线。"
+  },
+  {
+    "id": "ending_visa_countdown",
+    "type": "BE",
+    "title": "签证倒计时模拟器",
+    "description": "日期越来越近，机会越来越窄。你开始明白，焦虑如果不被处理，就会长成系统提示音。",
+    "summary": "Visa和Career不足导致目标失败。"
+  },
+  {
+    "id": "ending_rug_again",
+    "type": "BE",
+    "title": "开局一张地毯，结局还是一张地毯",
+    "description": "地毯还在，灯还亮着。你走了很久，却好像还停在第一晚。",
+    "summary": "资源、生活和职业多线失衡。"
+  },
+  {
+    "id": "ending_system_shutdown",
+    "type": "BE",
+    "title": "不是挂科，是系统关机",
+    "description": "你没有输给某一门课。你只是太久没有把自己当成需要维护的系统。",
+    "summary": "Sanity严重不足导致崩溃结局。"
+  },
+  {
+    "id": "ending_still_unknown",
+    "type": "BE",
+    "title": "你仍然不知道",
+    "description": "毕业到了，你还是不知道自己为什么来、要去哪、该留下还是回去。世界没有暂停等你。",
+    "summary": "Identity不足，迷茫路线失败。"
+  },
+  {
+    "id": "ending_meta_game",
+    "type": "TE",
+    "title": "你把这一切做成了一个小游戏",
+    "description": "你看着地毯、due、快递、房东、朋友圈和拒信，突然意识到：如果这一切太荒诞，那就把它变成一个系统。",
+    "summary": "隐藏Meta结局。你把混乱转化成作品。"
+  }
+]

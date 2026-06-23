@@ -1,0 +1,173 @@
+[
+  {
+    "endingId": "ending_system_shutdown",
+    "priority": 100,
+    "type": "BE",
+    "conditions": {
+      "maxStats": {
+        "sanity": 15
+      }
+    }
+  },
+  {
+    "endingId": "ending_visa_countdown",
+    "priority": 95,
+    "type": "BE",
+    "conditions": {
+      "maxStats": {
+        "visa": 35,
+        "career": 55
+      }
+    }
+  },
+  {
+    "endingId": "ending_rug_again",
+    "priority": 90,
+    "type": "BE",
+    "conditions": {
+      "maxStats": {
+        "money": 30,
+        "lifeSkill": 40,
+        "career": 45
+      }
+    }
+  },
+  {
+    "endingId": "ending_still_unknown",
+    "priority": 88,
+    "type": "BE",
+    "conditions": {
+      "goals": [
+        "unknown"
+      ],
+      "maxStats": {
+        "identity": 45
+      }
+    }
+  },
+  {
+    "endingId": "ending_offer",
+    "priority": 80,
+    "type": "HE",
+    "conditions": {
+      "minStats": {
+        "career": 75,
+        "english": 60,
+        "gpa": 50
+      }
+    }
+  },
+  {
+    "endingId": "ending_return_home",
+    "priority": 78,
+    "type": "HE",
+    "conditions": {
+      "goals": [
+        "return_home"
+      ],
+      "minStats": {
+        "career": 60,
+        "identity": 60
+      }
+    }
+  },
+  {
+    "endingId": "ending_find_direction",
+    "priority": 76,
+    "type": "HE",
+    "conditions": {
+      "goals": [
+        "unknown",
+        "escape"
+      ],
+      "minStats": {
+        "identity": 80
+      }
+    }
+  },
+  {
+    "endingId": "ending_love_self",
+    "priority": 74,
+    "type": "HE",
+    "conditions": {
+      "goals": [
+        "love"
+      ],
+      "minStats": {
+        "identity": 60,
+        "sanity": 45
+      }
+    }
+  },
+  {
+    "endingId": "ending_real_room",
+    "priority": 70,
+    "type": "HE",
+    "conditions": {
+      "minStats": {
+        "lifeSkill": 70,
+        "sanity": 55,
+        "money": 40
+      }
+    }
+  },
+  {
+    "endingId": "ending_linkedin_warrior",
+    "priority": 65,
+    "type": "NE",
+    "conditions": {
+      "minStats": {
+        "social": 75
+      },
+      "maxStats": {
+        "career": 55,
+        "identity": 60
+      }
+    }
+  },
+  {
+    "endingId": "ending_stay_not_imagined",
+    "priority": 62,
+    "type": "NE",
+    "conditions": {
+      "goals": [
+        "stay"
+      ],
+      "minStats": {
+        "visa": 45
+      }
+    }
+  },
+  {
+    "endingId": "ending_single_mainline",
+    "priority": 58,
+    "type": "NE",
+    "conditions": {
+      "minStats": {
+        "identity": 65,
+        "sanity": 45
+      },
+      "maxStats": {
+        "love": 40
+      }
+    }
+  },
+  {
+    "endingId": "ending_stay_not_imagined",
+    "priority": 10,
+    "type": "NE",
+    "conditions": {}
+  },
+  {
+    "endingId": "ending_rug_again",
+    "priority": 5,
+    "type": "BE",
+    "conditions": {}
+  },
+  {
+    "endingId": "ending_real_room",
+    "priority": 1,
+    "type": "HE",
+    "conditions": {}
+  }
+]

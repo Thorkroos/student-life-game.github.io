@@ -1,0 +1,44 @@
+[
+  {
+    "id": "arrival",
+    "label": "落地阶段",
+    "minProgress": 0,
+    "maxProgress": 10
+  },
+  {
+    "id": "adapt",
+    "label": "适应阶段",
+    "minProgress": 10,
+    "maxProgress": 25
+  },
+  {
+    "id": "mid_semester",
+    "label": "学期中期",
+    "minProgress": 25,
+    "maxProgress": 45
+  },
+  {
+    "id": "exam",
+    "label": "期末阶段",
+    "minProgress": 45,
+    "maxProgress": 60
+  },
+  {
+    "id": "break",
+    "label": "假期阶段",
+    "minProgress": 60,
+    "maxProgress": 70
+  },
+  {
+    "id": "career_phase",
+    "label": "毕业前阶段",
+    "minProgress": 70,
+    "maxProgress": 90
+  },
+  {
+    "id": "graduation",
+    "label": "毕业结算阶段",
+    "minProgress": 90,
+    "maxProgress": 101
+  }
+]

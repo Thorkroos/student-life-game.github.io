@@ -1,0 +1,248 @@
+[
+  {
+    "id": "hidden_sanity_due_distortion",
+    "title": "Due date看起来不像日期",
+    "category": "hidden",
+    "type": "mental",
+    "phase": [
+      "exam",
+      "career_phase"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 45,
+    "once": true,
+    "conditions": {
+      "minProgress": 45,
+      "maxStats": {
+        "sanity": 30
+      }
+    },
+    "weightModifiers": [],
+    "text": "你盯着due date看了十分钟，突然觉得它不像日期，像命运给你开的电子账单。",
+    "choices": [
+      {
+        "text": "强制睡觉",
+        "effects": {
+          "sanity": 10,
+          "gpa": -4
+        },
+        "flagsAdd": [
+          "due_date_distortion"
+        ],
+        "furnitureAdd": [],
+        "resultText": "你醒来之后，世界没有完全修复，但至少你能读懂题目了。"
+      },
+      {
+        "text": "继续硬撑",
+        "effects": {
+          "gpa": 3,
+          "sanity": -10
+        },
+        "flagsAdd": [
+          "due_date_distortion"
+        ],
+        "furnitureAdd": [],
+        "resultText": "你提交了作业，也提交了一部分灵魂。"
+      }
+    ]
+  },
+  {
+    "id": "hidden_money_rent_panic",
+    "title": "房租红色警报",
+    "category": "hidden",
+    "type": "money",
+    "phase": [
+      "mid_semester",
+      "break",
+      "career_phase"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 45,
+    "once": true,
+    "conditions": {
+      "minProgress": 25,
+      "maxStats": {
+        "money": 25
+      }
+    },
+    "weightModifiers": [],
+    "text": "房租提醒弹出来的时候，你的银行卡余额像在和你玩极限运动。",
+    "choices": [
+      {
+        "text": "接临时班",
+        "effects": {
+          "money": 12,
+          "sanity": -6,
+          "gpa": -3
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "钱回来了，睡眠走了。"
+      },
+      {
+        "text": "向家里开口",
+        "effects": {
+          "money": 15,
+          "identity": -5,
+          "sanity": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你不是失败，只是这一步很难。"
+      },
+      {
+        "text": "卖掉闲置物品",
+        "effects": {
+          "money": 8,
+          "lifeSkill": 4,
+          "sanity": -1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你从生活里挤出了一点现金。"
+      }
+    ]
+  },
+  {
+    "id": "hidden_visa_countdown",
+    "title": "倒计时开始有声音",
+    "category": "hidden",
+    "type": "visa",
+    "phase": [
+      "career_phase",
+      "graduation"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 45,
+    "once": true,
+    "conditions": {
+      "minProgress": 70,
+      "maxStats": {
+        "visa": 30
+      }
+    },
+    "weightModifiers": [],
+    "text": "签证日期以前只是一个数字，现在它像闹钟一样在你脑子里响。",
+    "choices": [
+      {
+        "text": "立刻制定备选路线",
+        "effects": {
+          "visa": 6,
+          "identity": 4,
+          "sanity": -5
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "焦虑被拆成行动，虽然仍然很吵。"
+      },
+      {
+        "text": "联系中介",
+        "effects": {
+          "visa": 5,
+          "money": -10,
+          "sanity": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你买到了一点信息，也买到了一点安心。"
+      },
+      {
+        "text": "逃避一天",
+        "effects": {
+          "sanity": 3,
+          "visa": -6
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你休息了一天，倒计时没有。"
+      }
+    ]
+  },
+  {
+    "id": "hidden_gpa_warning_email",
+    "title": "学术警告邮件",
+    "category": "hidden",
+    "type": "school",
+    "phase": [
+      "exam",
+      "career_phase"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 42,
+    "once": true,
+    "conditions": {
+      "minProgress": 45,
+      "maxStats": {
+        "gpa": 35
+      }
+    },
+    "weightModifiers": [],
+    "text": "你收到一封学术提醒邮件。标题很短，但杀伤力很高。",
+    "choices": [
+      {
+        "text": "约老师office hour",
+        "effects": {
+          "gpa": 6,
+          "english": 2,
+          "sanity": -3
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你发现老师不是最终boss，至少这次不是。"
+      },
+      {
+        "text": "申请延期和补救",
+        "effects": {
+          "gpa": 5,
+          "lifeSkill": 3,
+          "sanity": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你开始使用规则，而不是只害怕规则。"
+      },
+      {
+        "text": "不敢打开第二遍",
+        "effects": {
+          "sanity": 2,
+          "gpa": -8
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "邮件不会因为你不看就撤回自己。"
+      }
+    ]
+  }
+]

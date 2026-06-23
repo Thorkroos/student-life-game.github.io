@@ -1,0 +1,69 @@
+[
+  {
+    "id": "adv_phd_choice",
+    "title": "读博是选择还是缓刑",
+    "category": "advanced",
+    "type": "career",
+    "phase": [
+      "career_phase",
+      "graduation"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "phd"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 34,
+    "once": true,
+    "conditions": {
+      "minProgress": 70,
+      "minStats": {
+        "gpa": 65
+      }
+    },
+    "weightModifiers": [],
+    "text": "你拿着research proposal，突然问自己：我是想研究，还是只是不想进入下一个人生阶段？",
+    "choices": [
+      {
+        "text": "继续申请博士",
+        "effects": {
+          "gpa": 6,
+          "career": 5,
+          "identity": 4,
+          "sanity": -5
+        },
+        "flagsAdd": [
+          "phd_path"
+        ],
+        "furnitureAdd": [],
+        "resultText": "至少这一次，你知道自己为什么申请。"
+      },
+      {
+        "text": "先工作一段时间",
+        "effects": {
+          "career": 5,
+          "identity": 5,
+          "gpa": -1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你没有放弃学术，只是先把自己放回生活。"
+      },
+      {
+        "text": "把读博当缓刑",
+        "effects": {
+          "sanity": 2,
+          "identity": -6,
+          "gpa": 2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "问题被推迟了，但没有被回答。"
+      }
+    ]
+  }
+]

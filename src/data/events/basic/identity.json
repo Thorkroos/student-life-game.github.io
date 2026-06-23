@@ -1,0 +1,129 @@
+[
+  {
+    "id": "identity_small_win",
+    "title": "一个很小的胜利",
+    "category": "basic",
+    "type": "identity",
+    "phase": [
+      "adapt",
+      "mid_semester",
+      "break"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 25,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "今天你独自解决了一个小问题：可能是退货、预约、问路，或者把床单成功套上。没人鼓掌，但你知道这不容易。",
+    "choices": [
+      {
+        "text": "认真记住这个瞬间",
+        "effects": {
+          "identity": 5,
+          "sanity": 4
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "成长有时候不是变强，是终于看见自己在努力。"
+      },
+      {
+        "text": "发朋友圈轻描淡写",
+        "effects": {
+          "social": 2,
+          "sanity": 2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你写得像段子，但里面有一点真的骄傲。"
+      },
+      {
+        "text": "不当回事，继续赶路",
+        "effects": {
+          "career": 1,
+          "gpa": 1,
+          "identity": -1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你走得很快，但别忘了自己刚刚跨过了什么。"
+      }
+    ]
+  },
+  {
+    "id": "identity_self_narrative",
+    "title": "你开始重写自己的故事",
+    "category": "basic",
+    "type": "identity",
+    "phase": [
+      "break",
+      "career_phase",
+      "graduation"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 20,
+    "once": true,
+    "conditions": {
+      "minProgress": 0,
+      "maxProgress": 100
+    },
+    "weightModifiers": [],
+    "text": "某个晚上，你突然意识到：你不是被留学生活拖着走的人。你也可以决定什么值得，什么不值得。",
+    "choices": [
+      {
+        "text": "承认目标变了",
+        "effects": {
+          "identity": 8,
+          "sanity": 3
+        },
+        "flagsAdd": [
+          "self_narrative"
+        ],
+        "furnitureAdd": [],
+        "resultText": "改变目标不是失败，是你终于参与了自己的人生。"
+      },
+      {
+        "text": "继续坚持原计划",
+        "effects": {
+          "identity": 4,
+          "career": 3,
+          "sanity": -2
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "坚持也可以是选择，只要它不是惯性。"
+      },
+      {
+        "text": "把这段经历写下来",
+        "effects": {
+          "identity": 6,
+          "gpa": 1,
+          "sanity": 1
+        },
+        "flagsAdd": [
+          "self_narrative"
+        ],
+        "furnitureAdd": [],
+        "resultText": "文字把混乱变成了可以拿在手里的东西。"
+      }
+    ]
+  }
+]

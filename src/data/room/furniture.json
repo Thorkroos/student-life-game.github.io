@@ -1,0 +1,52 @@
+[
+  {
+    "id": "rug",
+    "label": "地毯",
+    "comfort": 1
+  },
+  {
+    "id": "pillow",
+    "label": "枕头",
+    "comfort": 1
+  },
+  {
+    "id": "floor_lamp",
+    "label": "落地灯",
+    "comfort": 1
+  },
+  {
+    "id": "secondhand_mattress",
+    "label": "二手床垫",
+    "comfort": 6
+  },
+  {
+    "id": "ikea_bed",
+    "label": "IKEA床架",
+    "comfort": 8
+  },
+  {
+    "id": "desk",
+    "label": "书桌",
+    "comfort": 6
+  },
+  {
+    "id": "chair",
+    "label": "人体工学椅",
+    "comfort": 6
+  },
+  {
+    "id": "rice_cooker",
+    "label": "电饭煲",
+    "comfort": 5
+  },
+  {
+    "id": "monitor",
+    "label": "显示器",
+    "comfort": 5
+  },
+  {
+    "id": "small_sofa",
+    "label": "小沙发",
+    "comfort": 7
+  }
+]

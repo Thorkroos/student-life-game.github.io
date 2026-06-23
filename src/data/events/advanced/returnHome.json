@@ -1,0 +1,67 @@
+[
+  {
+    "id": "adv_return_ticket_decision",
+    "title": "买回国机票",
+    "category": "advanced",
+    "type": "identity",
+    "phase": [
+      "graduation"
+    ],
+    "majorTags": [
+      "any"
+    ],
+    "goalTags": [
+      "return_home",
+      "unknown",
+      "escape",
+      "any"
+    ],
+    "backgroundTags": [
+      "any"
+    ],
+    "baseWeight": 34,
+    "once": true,
+    "conditions": {
+      "minProgress": 90
+    },
+    "weightModifiers": [],
+    "text": "你看着回国机票价格曲线。以前它像撤退路线，现在它也可能是一条明确的路。",
+    "choices": [
+      {
+        "text": "买票，准备回国",
+        "effects": {
+          "money": -8,
+          "identity": 8,
+          "career": 3
+        },
+        "flagsAdd": [
+          "return_ticket"
+        ],
+        "furnitureAdd": [],
+        "resultText": "你不是逃回去，你是带着这段经历回去。"
+      },
+      {
+        "text": "再等等海外机会",
+        "effects": {
+          "career": 3,
+          "visa": -3,
+          "sanity": -3
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你把答案推迟了一点，也把压力留下了一点。"
+      },
+      {
+        "text": "和家里认真谈一次",
+        "effects": {
+          "identity": 5,
+          "sanity": 2,
+          "social": 1
+        },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你终于没有只说“挺好的”。"
+      }
+    ]
+  }
+]

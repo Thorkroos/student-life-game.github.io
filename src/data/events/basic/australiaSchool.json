@@ -1,0 +1,116 @@
+[
+  {
+    "id": "au_school_census_date",
+    "title": "Census date提醒",
+    "category": "basic",
+    "type": "school",
+    "phase": ["adapt"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 44,
+    "once": true,
+    "conditions": { "minProgress": 8, "maxProgress": 24 },
+    "weightModifiers": [],
+    "text": "学校提醒census date快到了。退课、换课、学费和签证状态突然被同一封邮件绑在一起。",
+    "choices": [
+      {
+        "text": "检查课程负担再决定",
+        "effects": { "gpa": 3, "visa": 2, "lifeSkill": 3, "sanity": -2 },
+        "flagsAdd": ["census_date_checked"],
+        "furnitureAdd": [],
+        "resultText": "你没有把选课当成玄学，而是当成一次资源分配。"
+      },
+      {
+        "text": "硬着头皮全留",
+        "effects": { "gpa": 2, "sanity": -5, "visa": 1 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你保住了满课表，也把压力条推高了一截。"
+      },
+      {
+        "text": "找课程顾问确认",
+        "effects": { "english": 2, "gpa": 2, "visa": 3, "sanity": -1 },
+        "flagsAdd": ["census_date_checked"],
+        "furnitureAdd": [],
+        "resultText": "对方没有替你选择，但帮你看清了每个选择的后果。"
+      }
+    ]
+  },
+  {
+    "id": "au_school_tutorial_participation",
+    "title": "Tutorial参与分",
+    "category": "basic",
+    "type": "school",
+    "phase": ["adapt", "mid_semester"],
+    "majorTags": ["business", "social_science", "education", "any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 36,
+    "once": true,
+    "conditions": { "minProgress": 6, "maxProgress": 42 },
+    "weightModifiers": [],
+    "text": "老师说participation会计入成绩。你看着一圈同学，感觉每个人都在等别人先开口。",
+    "choices": [
+      {
+        "text": "提前准备一个观点",
+        "effects": { "english": 3, "gpa": 4, "sanity": -2 },
+        "flagsAdd": ["tutorial_spoke_up"],
+        "furnitureAdd": [],
+        "resultText": "你说得不长，但老师点了头。这个点头够你撑过半节课。"
+      },
+      {
+        "text": "把问题抛给小组",
+        "effects": { "social": 3, "gpa": 2, "english": 1 },
+        "flagsAdd": ["tutorial_spoke_up"],
+        "furnitureAdd": [],
+        "resultText": "你没有独自表演，而是把空气搅动起来了。"
+      },
+      {
+        "text": "继续做沉默的优秀听众",
+        "effects": { "sanity": 2, "english": -1, "gpa": -1 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你听得很认真，但系统没有给沉默太多分。"
+      }
+    ]
+  },
+  {
+    "id": "au_school_turnitin_score",
+    "title": "Turnitin百分比",
+    "category": "basic",
+    "type": "school",
+    "phase": ["mid_semester", "exam"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 34,
+    "once": true,
+    "conditions": { "minProgress": 24, "maxProgress": 52 },
+    "weightModifiers": [],
+    "text": "提交前，Turnitin相似度数字跳了出来。它像体检报告一样冰冷，又像审判一样主观。",
+    "choices": [
+      {
+        "text": "重写高风险段落",
+        "effects": { "gpa": 5, "sanity": -4, "english": 2 },
+        "flagsAdd": ["turnitin_checked"],
+        "furnitureAdd": [],
+        "resultText": "你删掉了几句像教材复制出来的话，也把自己的声音找回来一点。"
+      },
+      {
+        "text": "补引用和页码",
+        "effects": { "gpa": 4, "lifeSkill": 2, "sanity": -2 },
+        "flagsAdd": ["turnitin_checked"],
+        "furnitureAdd": [],
+        "resultText": "引用格式终于像个成年人了。"
+      },
+      {
+        "text": "相信它只是虚惊一场",
+        "effects": { "sanity": 3, "gpa": -5 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你睡得快了一点，梦里却出现了红色百分比。"
+      }
+    ]
+  }
+]

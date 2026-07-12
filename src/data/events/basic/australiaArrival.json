@@ -1,0 +1,154 @@
+[
+  {
+    "id": "au_arrival_bank_account",
+    "title": "银行卡和本地地址",
+    "category": "basic",
+    "type": "life",
+    "phase": ["arrival", "adapt"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 46,
+    "once": true,
+    "conditions": { "minProgress": 0, "maxProgress": 28 },
+    "weightModifiers": [],
+    "text": "你坐在银行柜台前，对方问你的澳洲住址。你突然发现，能说出一个地址，才像是真的落地了。",
+    "choices": [
+      {
+        "text": "认真问清账户和手续费",
+        "effects": { "english": 2, "lifeSkill": 3, "sanity": -1 },
+        "flagsAdd": ["bank_account_ready"],
+        "furnitureAdd": [],
+        "resultText": "你听懂了大部分关键词，也把未来的生活费找到了一个正式入口。"
+      },
+      {
+        "text": "先开最基础的账户",
+        "effects": { "money": 1, "lifeSkill": 2, "sanity": 1 },
+        "flagsAdd": ["bank_account_ready"],
+        "furnitureAdd": [],
+        "resultText": "不优雅，但够用。你的卡终于可以在超市机子上滴一声。"
+      },
+      {
+        "text": "让工作人员重复三遍",
+        "effects": { "english": 3, "sanity": -2 },
+        "flagsAdd": ["bank_account_ready"],
+        "furnitureAdd": [],
+        "resultText": "你脸有点热，但这次你没有假装听懂。"
+      }
+    ]
+  },
+  {
+    "id": "au_arrival_transport_card",
+    "title": "第一张交通卡",
+    "category": "basic",
+    "type": "life",
+    "phase": ["arrival", "adapt"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 42,
+    "once": true,
+    "conditions": { "minProgress": 0, "maxProgress": 30 },
+    "weightModifiers": [],
+    "text": "你在车站研究充值机。屏幕、站名和换乘路线一起向你展示了什么叫城市新手教程。",
+    "choices": [
+      {
+        "text": "现场研究路线和优惠",
+        "effects": { "lifeSkill": 3, "money": 1, "sanity": -1 },
+        "flagsAdd": ["transport_card_ready"],
+        "furnitureAdd": [],
+        "resultText": "你没有完全弄懂分区，但至少不会再坐反方向。"
+      },
+      {
+        "text": "直接充值一大笔",
+        "effects": { "money": -5, "sanity": 2 },
+        "flagsAdd": ["transport_card_ready"],
+        "furnitureAdd": [],
+        "resultText": "余额看起来很安全，钱包看起来不太安全。"
+      },
+      {
+        "text": "跟着同学走一次",
+        "effects": { "social": 2, "lifeSkill": 2 },
+        "flagsAdd": ["transport_card_ready"],
+        "furnitureAdd": [],
+        "resultText": "你记住了站台，也顺便记住了一个可以一起上课的人。"
+      }
+    ]
+  },
+  {
+    "id": "au_arrival_oshc_card",
+    "title": "OSHC和看病流程",
+    "category": "basic",
+    "type": "life",
+    "phase": ["arrival", "adapt"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 34,
+    "once": true,
+    "conditions": { "minProgress": 0, "maxProgress": 35 },
+    "weightModifiers": [],
+    "text": "学校邮件提醒你激活海外学生医保。你看着一堆缩写，开始理解留学生活其实是缩写生存。",
+    "choices": [
+      {
+        "text": "立刻注册账号并保存卡号",
+        "effects": { "lifeSkill": 4, "sanity": 1 },
+        "flagsAdd": ["oshc_ready"],
+        "furnitureAdd": [],
+        "resultText": "未来的你可能会感谢现在这个没有拖延的你。"
+      },
+      {
+        "text": "顺手查附近GP",
+        "effects": { "lifeSkill": 3, "english": 1, "sanity": -1 },
+        "flagsAdd": ["oshc_ready"],
+        "furnitureAdd": [],
+        "resultText": "你把诊所收藏进地图，好像给自己放了一个安全锚点。"
+      },
+      {
+        "text": "先标成未读",
+        "effects": { "sanity": 2, "lifeSkill": -2 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "未读邮件安静地躺着，像一个小型未来麻烦。"
+      }
+    ]
+  },
+  {
+    "id": "au_arrival_condition_report",
+    "title": "入住检查报告",
+    "category": "basic",
+    "type": "housing",
+    "phase": ["arrival", "adapt"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 38,
+    "once": true,
+    "conditions": { "minProgress": 0, "maxProgress": 32 },
+    "weightModifiers": [],
+    "text": "中介发来condition report。墙角、地毯、窗台，每一处旧痕迹都可能在退租时变成你的账单。",
+    "choices": [
+      {
+        "text": "逐项拍照上传",
+        "effects": { "lifeSkill": 5, "sanity": -2 },
+        "flagsAdd": ["condition_report_done"],
+        "furnitureAdd": [],
+        "resultText": "你像侦探一样拍完房间，也给未来的押金留了证据。"
+      },
+      {
+        "text": "只检查明显损坏",
+        "effects": { "lifeSkill": 2, "sanity": 1 },
+        "flagsAdd": ["condition_report_done"],
+        "furnitureAdd": [],
+        "resultText": "够用，但你心里知道有几个角落被你放过了。"
+      },
+      {
+        "text": "觉得麻烦，先不管",
+        "effects": { "sanity": 2, "lifeSkill": -3 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "这一刻很轻松，像把债务写给未来的自己。"
+      }
+    ]
+  }
+]

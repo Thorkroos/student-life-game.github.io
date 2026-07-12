@@ -1,0 +1,158 @@
+[
+  {
+    "id": "adv_au_capstone_week",
+    "title": "Capstone最后一周",
+    "category": "advanced",
+    "type": "career",
+    "phase": ["career_phase", "graduation"],
+    "majorTags": ["business", "stem", "education", "any"],
+    "goalTags": ["stay", "return_home", "money", "any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 24,
+    "once": true,
+    "conditions": { "minProgress": 76, "maxProgress": 100 },
+    "weightModifiers": [],
+    "text": "Capstone项目进入最后一周。它既是作业，也是你能不能向未来雇主讲清自己的证据。",
+    "choices": [
+      {
+        "text": "把项目包装进portfolio",
+        "effects": { "career": 6, "gpa": 3, "sanity": -3 },
+        "flagsAdd": ["capstone_portfolio"],
+        "furnitureAdd": [],
+        "resultText": "你不再只是在交作业，而是在整理一段可以被看见的能力。"
+      },
+      {
+        "text": "优先保证顺利通过",
+        "effects": { "gpa": 5, "sanity": 1 },
+        "flagsAdd": ["capstone_completed"],
+        "furnitureAdd": [],
+        "resultText": "不够闪亮，但稳稳落地。"
+      },
+      {
+        "text": "拉同学一起复盘展示",
+        "effects": { "career": 4, "social": 3, "english": 2, "sanity": -2 },
+        "flagsAdd": ["capstone_portfolio"],
+        "furnitureAdd": [],
+        "resultText": "你们互相指出了很多尴尬表达，也把展示磨得更像样。"
+      }
+    ]
+  },
+  {
+    "id": "adv_au_reference_letter",
+    "title": "推荐信请求",
+    "category": "advanced",
+    "type": "career",
+    "phase": ["career_phase", "graduation"],
+    "majorTags": ["any"],
+    "goalTags": ["phd", "return_home", "stay", "any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 22,
+    "once": true,
+    "conditions": { "minProgress": 72, "maxProgress": 100 },
+    "weightModifiers": [
+      { "condition": "gpa >= 65", "multiplier": 1.25 }
+    ],
+    "text": "你需要一封推荐信。邮件草稿写了又删，像在请求别人证明你曾经努力过。",
+    "choices": [
+      {
+        "text": "附上成绩和项目摘要",
+        "effects": { "career": 5, "gpa": 2, "english": 2, "sanity": -2 },
+        "flagsAdd": ["reference_requested"],
+        "furnitureAdd": [],
+        "resultText": "你的请求具体、清楚，也更容易被认真对待。"
+      },
+      {
+        "text": "先面谈沟通方向",
+        "effects": { "career": 4, "identity": 3, "english": 2 },
+        "flagsAdd": ["reference_requested"],
+        "furnitureAdd": [],
+        "resultText": "这场谈话让你意识到，别人眼中的你比你以为的更完整。"
+      },
+      {
+        "text": "拖到截止前再问",
+        "effects": { "sanity": 1, "career": -3 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你暂时躲开了尴尬，也降低了别人帮你的可能性。"
+      }
+    ]
+  },
+  {
+    "id": "adv_au_bond_and_shipping",
+    "title": "退租、押金和行李箱",
+    "category": "advanced",
+    "type": "housing",
+    "phase": ["graduation"],
+    "majorTags": ["any"],
+    "goalTags": ["return_home", "unknown", "stay", "any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 24,
+    "once": true,
+    "conditions": { "minProgress": 88, "maxProgress": 100 },
+    "weightModifiers": [],
+    "text": "毕业临近，房间里的每件东西都变成问题：卖掉、寄回、带走，还是留给下一个刚落地的人？",
+    "choices": [
+      {
+        "text": "认真清理并处理押金",
+        "effects": { "money": 6, "lifeSkill": 4, "sanity": -2 },
+        "flagsAdd": ["bond_return_prepared"],
+        "furnitureAdd": [],
+        "resultText": "你从地毯开局，最后学会了如何体面地离开一间房。"
+      },
+      {
+        "text": "把东西转给新生",
+        "effects": { "social": 3, "identity": 3, "money": 2 },
+        "flagsAdd": ["helped_new_arrival"],
+        "furnitureAdd": [],
+        "resultText": "你把一盏灯交出去，像把某个副本入口标给后来的人。"
+      },
+      {
+        "text": "能塞进行李箱的都塞进去",
+        "effects": { "money": -4, "sanity": -2, "identity": 2 },
+        "flagsAdd": ["overpacked_suitcase"],
+        "furnitureAdd": [],
+        "resultText": "行李箱超重了，但有些重量不是航空公司能计算的。"
+      }
+    ]
+  },
+  {
+    "id": "adv_au_post_study_path",
+    "title": "毕业后的路径表",
+    "category": "advanced",
+    "type": "visa",
+    "phase": ["graduation"],
+    "majorTags": ["any"],
+    "goalTags": ["stay", "phd", "unknown", "any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 26,
+    "once": true,
+    "conditions": { "minProgress": 88, "maxProgress": 100 },
+    "weightModifiers": [
+      { "condition": "visa <= 50", "multiplier": 1.3 }
+    ],
+    "text": "你把毕业后的几条路径写在纸上：工作、毕业生签证、继续读、回国、换城市。每一条都不是纯粹的胜利或失败。",
+    "choices": [
+      {
+        "text": "选择一个主路径和一个备选",
+        "effects": { "visa": 5, "identity": 5, "sanity": -2 },
+        "flagsAdd": ["post_study_path_chosen"],
+        "furnitureAdd": [],
+        "resultText": "你不再要求人生只给一个正确答案。你开始给自己设计容错。"
+      },
+      {
+        "text": "先按最现实的材料准备",
+        "effects": { "visa": 6, "career": 3, "lifeSkill": 2, "sanity": -3 },
+        "flagsAdd": ["post_study_path_chosen"],
+        "furnitureAdd": [],
+        "resultText": "现实不浪漫，但它能让选择真正落地。"
+      },
+      {
+        "text": "再给自己一周不决定",
+        "effects": { "sanity": 3, "identity": 1, "visa": -2 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你不是逃避全部，只是承认自己需要一点缓冲。"
+      }
+    ]
+  }
+]

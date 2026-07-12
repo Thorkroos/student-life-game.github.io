@@ -1,0 +1,120 @@
+[
+  {
+    "id": "au_social_society_bbq",
+    "title": "社团BBQ",
+    "category": "basic",
+    "type": "social",
+    "phase": ["adapt", "mid_semester"],
+    "majorTags": ["any"],
+    "goalTags": ["love", "stay", "unknown", "any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 30,
+    "once": true,
+    "conditions": { "minProgress": 8, "maxProgress": 45 },
+    "weightModifiers": [],
+    "text": "草坪上的社团BBQ烟味很重，大家端着纸盘尴尬地自我介绍。你突然有点想逃，也有点想留下。",
+    "choices": [
+      {
+        "text": "主动加入聊天",
+        "effects": { "social": 5, "english": 2, "sanity": -2 },
+        "flagsAdd": ["society_joined"],
+        "furnitureAdd": [],
+        "resultText": "你没有立刻交到挚友，但终于不只是一个路过的人。"
+      },
+      {
+        "text": "帮忙收拾桌子",
+        "effects": { "social": 3, "lifeSkill": 2, "identity": 1 },
+        "flagsAdd": ["society_joined"],
+        "furnitureAdd": [],
+        "resultText": "劳动比寒暄自然，你在收垃圾时认识了两个人。"
+      },
+      {
+        "text": "拿完香肠面包就走",
+        "effects": { "sanity": 2, "social": -1, "money": 1 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "这也是一种参与，只是比较像潜行。"
+      }
+    ]
+  },
+  {
+    "id": "au_family_exchange_rate",
+    "title": "汇率又变了",
+    "category": "basic",
+    "type": "family",
+    "phase": ["mid_semester", "break", "career_phase"],
+    "majorTags": ["any"],
+    "goalTags": ["money", "return_home", "any"],
+    "backgroundTags": ["ordinary", "middle", "all_in", "any"],
+    "baseWeight": 30,
+    "once": true,
+    "conditions": { "minProgress": 20, "maxProgress": 88 },
+    "weightModifiers": [
+      { "condition": "money <= 35", "multiplier": 1.4 }
+    ],
+    "text": "家里问你这个月还够不够。你看着汇率和租金，突然不知道该怎么把压力翻译成一句轻松的话。",
+    "choices": [
+      {
+        "text": "如实说预算紧张",
+        "effects": { "money": 8, "sanity": -3, "identity": 2 },
+        "flagsAdd": ["family_money_talk"],
+        "furnitureAdd": [],
+        "resultText": "开口很难，但沉默也不是免费的。"
+      },
+      {
+        "text": "说还行，自己再省省",
+        "effects": { "money": 2, "sanity": -4, "lifeSkill": 2 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你把压力折起来塞进口袋，口袋越来越鼓。"
+      },
+      {
+        "text": "整理预算表发过去",
+        "effects": { "lifeSkill": 4, "money": 4, "sanity": -1 },
+        "flagsAdd": ["family_money_talk"],
+        "furnitureAdd": [],
+        "resultText": "数字让争论少了一点，也让你看清自己到底花在哪里。"
+      }
+    ]
+  },
+  {
+    "id": "au_love_picnic_date",
+    "title": "公园野餐约会",
+    "category": "basic",
+    "type": "dating",
+    "phase": ["break", "career_phase"],
+    "majorTags": ["any"],
+    "goalTags": ["love", "unknown", "any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 26,
+    "once": true,
+    "conditions": { "minProgress": 50, "maxProgress": 88 },
+    "weightModifiers": [
+      { "condition": "love <= 35", "multiplier": 1.2 }
+    ],
+    "text": "对方提议周末去公园野餐。阳光很好，你却在想自己有没有余力认真靠近一个人。",
+    "choices": [
+      {
+        "text": "答应，并准备一点食物",
+        "effects": { "love": 6, "lifeSkill": 2, "money": -4, "sanity": 1 },
+        "flagsAdd": ["picnic_date"],
+        "furnitureAdd": [],
+        "resultText": "你们聊了很多不重要的事，正因为不重要，才像生活。"
+      },
+      {
+        "text": "改成短咖啡",
+        "effects": { "love": 3, "sanity": 2, "lifeSkill": 1 },
+        "flagsAdd": ["picnic_date"],
+        "furnitureAdd": [],
+        "resultText": "你给关系留了门，也给自己留了出口。"
+      },
+      {
+        "text": "说这周太忙",
+        "effects": { "career": 2, "gpa": 1, "love": -2, "sanity": 1 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你是真的忙，也是真的错过了一点柔软。"
+      }
+    ]
+  }
+]

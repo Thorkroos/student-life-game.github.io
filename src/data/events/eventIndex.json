@@ -1,13 +1,18 @@
 {
   "basic": [
     "basic/arrival.json",
+    "basic/australiaArrival.json",
     "basic/school.json",
+    "basic/australiaSchool.json",
     "basic/majors.json",
     "basic/goals.json",
     "basic/life.json",
+    "basic/australiaLife.json",
     "basic/furniture.json",
     "basic/social.json",
+    "basic/australiaSocialFamily.json",
     "basic/work.json",
+    "basic/australiaWorkVisa.json",
     "basic/career.json",
     "basic/visa.json",
     "basic/family.json",
@@ -15,7 +20,8 @@
   ],
   "hidden": [
     "hidden/highStats.json",
-    "hidden/lowStats.json"
+    "hidden/lowStats.json",
+    "hidden/australiaPressure.json"
   ],
   "advanced": [
     "advanced/stay.json",
@@ -24,6 +30,7 @@
     "advanced/phd.json",
     "advanced/love.json",
     "advanced/career.json",
-    "advanced/unknown.json"
+    "advanced/unknown.json",
+    "advanced/australiaTransitions.json"
   ]
 }

@@ -1,0 +1,116 @@
+[
+  {
+    "id": "au_life_rental_inspection",
+    "title": "租房例行检查",
+    "category": "basic",
+    "type": "housing",
+    "phase": ["adapt", "mid_semester"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 34,
+    "once": true,
+    "conditions": { "minProgress": 8, "maxProgress": 45 },
+    "weightModifiers": [],
+    "text": "中介通知要来例行检查。你第一次认真审视自己的房间：这里是家，还是临时仓库？",
+    "choices": [
+      {
+        "text": "提前打扫并拍照",
+        "effects": { "lifeSkill": 4, "sanity": -1, "visa": 1 },
+        "flagsAdd": ["inspection_prepared"],
+        "furnitureAdd": [],
+        "resultText": "房间看起来像有人在认真生活，中介也没有找到新的发挥空间。"
+      },
+      {
+        "text": "只把公共区域收一下",
+        "effects": { "lifeSkill": 2, "sanity": 1 },
+        "flagsAdd": ["inspection_prepared"],
+        "furnitureAdd": [],
+        "resultText": "它不完美，但不像事故现场。"
+      },
+      {
+        "text": "忘了这回事",
+        "effects": { "sanity": -4, "lifeSkill": -2 },
+        "flagsAdd": ["inspection_mess"],
+        "furnitureAdd": [],
+        "resultText": "中介的邮件很短，但你读出了很多潜台词。"
+      }
+    ]
+  },
+  {
+    "id": "au_life_mould_email",
+    "title": "墙角开始发霉",
+    "category": "basic",
+    "type": "housing",
+    "phase": ["mid_semester", "break"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 30,
+    "once": true,
+    "conditions": { "minProgress": 24, "maxProgress": 65 },
+    "weightModifiers": [],
+    "text": "连续下雨后，墙角出现霉斑。你站在房间里，觉得澳洲租房市场正在跟你进行湿度谈判。",
+    "choices": [
+      {
+        "text": "拍照发邮件给中介",
+        "effects": { "english": 2, "lifeSkill": 4, "sanity": -2 },
+        "flagsAdd": ["mould_reported"],
+        "furnitureAdd": [],
+        "resultText": "邮件措辞很冷静，附件里的照片一点都不冷静。"
+      },
+      {
+        "text": "买除湿用品先处理",
+        "effects": { "money": -6, "lifeSkill": 3, "sanity": 1 },
+        "flagsAdd": ["mould_controlled"],
+        "furnitureAdd": [],
+        "resultText": "问题没有消失，但至少没有继续扩张领土。"
+      },
+      {
+        "text": "先用家具挡住",
+        "effects": { "sanity": 2, "lifeSkill": -3 },
+        "flagsAdd": ["mould_ignored"],
+        "furnitureAdd": [],
+        "resultText": "你赢得了视觉上的和平，输掉了现实层面的主动权。"
+      }
+    ]
+  },
+  {
+    "id": "au_life_four_seasons_day",
+    "title": "一天四季",
+    "category": "basic",
+    "type": "life",
+    "phase": ["adapt", "mid_semester"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 28,
+    "once": true,
+    "conditions": { "minProgress": 6, "maxProgress": 45 },
+    "weightModifiers": [],
+    "text": "早上出门是夏天，中午下雨像秋天，晚上回家风像冬天。你开始怀疑天气也在读随机事件表。",
+    "choices": [
+      {
+        "text": "背包常备外套和伞",
+        "effects": { "lifeSkill": 3, "sanity": 1 },
+        "flagsAdd": ["weather_prepared"],
+        "furnitureAdd": [],
+        "resultText": "你像本地人一样准备充分，除了还是会被风吹到怀疑人生。"
+      },
+      {
+        "text": "硬扛",
+        "effects": { "money": 1, "sanity": -2 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你省了空间，失去了一点体温。"
+      },
+      {
+        "text": "临时买件外套",
+        "effects": { "money": -7, "sanity": 2 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "这不是消费主义，这是生存装备更新。"
+      }
+    ]
+  }
+]

@@ -1,44 +1,44 @@
 [
   {
     "id": "arrival",
-    "label": "落地第1周",
+    "label": "O-Week与落地",
     "minProgress": 0,
-    "maxProgress": 8
+    "maxProgress": 6
   },
   {
     "id": "adapt",
-    "label": "第一学期前半",
-    "minProgress": 8,
-    "maxProgress": 32
+    "label": "第一学期 Weeks 1-6",
+    "minProgress": 6,
+    "maxProgress": 24
   },
   {
     "id": "mid_semester",
-    "label": "第一学期后半",
-    "minProgress": 32,
-    "maxProgress": 50
+    "label": "第一学期 Weeks 7-12",
+    "minProgress": 24,
+    "maxProgress": 42
   },
   {
     "id": "exam",
-    "label": "第一学期期末",
-    "minProgress": 50,
-    "maxProgress": 62
+    "label": "期末与补交周",
+    "minProgress": 42,
+    "maxProgress": 52
   },
   {
     "id": "break",
-    "label": "学期假期",
-    "minProgress": 62,
-    "maxProgress": 70
+    "label": "冬季假期",
+    "minProgress": 52,
+    "maxProgress": 60
   },
   {
     "id": "career_phase",
     "label": "第二学期与求职季",
-    "minProgress": 70,
-    "maxProgress": 90
+    "minProgress": 60,
+    "maxProgress": 88
   },
   {
     "id": "graduation",
-    "label": "毕业结算周",
-    "minProgress": 90,
+    "label": "毕业与签证过渡",
+    "minProgress": 88,
     "maxProgress": 101
   }
 ]

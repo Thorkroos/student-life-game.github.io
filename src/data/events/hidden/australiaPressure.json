@@ -1,0 +1,134 @@
+[
+  {
+    "id": "hidden_au_tutor_remembers_name",
+    "title": "老师记住了你的名字",
+    "category": "hidden",
+    "type": "school",
+    "phase": ["mid_semester", "exam", "career_phase"],
+    "majorTags": ["any"],
+    "goalTags": ["phd", "return_home", "any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 18,
+    "once": true,
+    "conditions": {
+      "minStats": { "gpa": 72, "english": 55 }
+    },
+    "weightModifiers": [],
+    "text": "tutorial结束后，老师叫住你，准确说出了你的名字，并提到你上次的观点。",
+    "choices": [
+      {
+        "text": "顺势聊研究兴趣",
+        "effects": { "gpa": 4, "career": 3, "identity": 2 },
+        "flagsAdd": ["tutor_remembers_name"],
+        "furnitureAdd": [],
+        "resultText": "你突然发现，被看见不是运气，也是长期出勤和准备的复利。"
+      },
+      {
+        "text": "问有没有推荐阅读",
+        "effects": { "gpa": 5, "english": 2, "sanity": -1 },
+        "flagsAdd": ["tutor_remembers_name"],
+        "furnitureAdd": [],
+        "resultText": "你收到三篇论文，也收到一条更像学术道路的线索。"
+      }
+    ]
+  },
+  {
+    "id": "hidden_au_local_reference",
+    "title": "本地reference出现",
+    "category": "hidden",
+    "type": "career",
+    "phase": ["career_phase", "graduation"],
+    "majorTags": ["any"],
+    "goalTags": ["stay", "money", "return_home", "any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 16,
+    "once": true,
+    "conditions": {
+      "minStats": { "career": 68, "social": 55 }
+    },
+    "weightModifiers": [],
+    "text": "一个合作过的本地同学说，如果你申请那家公司，可以写他作为reference。",
+    "choices": [
+      {
+        "text": "认真维护这个机会",
+        "effects": { "career": 6, "social": 2, "sanity": -1 },
+        "flagsAdd": ["local_reference_ready"],
+        "furnitureAdd": [],
+        "resultText": "人脉不是玄学，是你之前每一次靠谱留下的痕迹。"
+      },
+      {
+        "text": "顺便请教面试经验",
+        "effects": { "career": 5, "english": 2, "social": 1 },
+        "flagsAdd": ["local_reference_ready"],
+        "furnitureAdd": [],
+        "resultText": "你得到的不只是名字，还有一点本地求职语境。"
+      }
+    ]
+  },
+  {
+    "id": "hidden_au_bond_panic",
+    "title": "押金会不会没了",
+    "category": "hidden",
+    "type": "money",
+    "phase": ["break", "career_phase", "graduation"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 18,
+    "once": true,
+    "conditions": {
+      "maxStats": { "money": 28, "lifeSkill": 45 }
+    },
+    "weightModifiers": [],
+    "text": "你突然意识到，退租时押金能不能回来，会决定你下个月是不是只吃意面。",
+    "choices": [
+      {
+        "text": "开始整理入住证据",
+        "effects": { "money": 3, "lifeSkill": 4, "sanity": -2 },
+        "flagsAdd": ["bond_evidence_sorted"],
+        "furnitureAdd": [],
+        "resultText": "你把照片、邮件和合同翻出来，像在给未来自己打官司。"
+      },
+      {
+        "text": "先问群里经验",
+        "effects": { "social": 2, "lifeSkill": 3, "sanity": 1 },
+        "flagsAdd": ["bond_evidence_sorted"],
+        "furnitureAdd": [],
+        "resultText": "群友的故事离谱但有用，你至少知道该从哪里开始。"
+      }
+    ]
+  },
+  {
+    "id": "hidden_au_course_progress_warning",
+    "title": "进度警告",
+    "category": "hidden",
+    "type": "visa",
+    "phase": ["exam", "career_phase"],
+    "majorTags": ["any"],
+    "goalTags": ["stay", "phd", "any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 18,
+    "once": true,
+    "conditions": {
+      "maxStats": { "gpa": 28, "visa": 45 }
+    },
+    "weightModifiers": [],
+    "text": "系统邮件提醒你课程进度有风险。它不是最终判决，但足够让你手心发凉。",
+    "choices": [
+      {
+        "text": "立刻预约支持服务",
+        "effects": { "gpa": 4, "visa": 4, "sanity": -2 },
+        "flagsAdd": ["course_warning_handled"],
+        "furnitureAdd": [],
+        "resultText": "你把警告从恐惧变成了行动清单。"
+      },
+      {
+        "text": "制定补救计划",
+        "effects": { "gpa": 5, "lifeSkill": 2, "sanity": -3 },
+        "flagsAdd": ["course_warning_handled"],
+        "furnitureAdd": [],
+        "resultText": "计划不能抹掉风险，但可以阻止你继续自由落体。"
+      }
+    ]
+  }
+]

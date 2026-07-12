@@ -1,0 +1,162 @@
+[
+  {
+    "id": "au_work_tfn_super",
+    "title": "TFN和Super表格",
+    "category": "basic",
+    "type": "work",
+    "phase": ["adapt", "mid_semester", "break"],
+    "majorTags": ["any"],
+    "goalTags": ["money", "stay", "any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 34,
+    "once": true,
+    "conditions": { "minProgress": 8, "maxProgress": 65 },
+    "weightModifiers": [
+      { "condition": "money <= 40", "multiplier": 1.35 }
+    ],
+    "text": "兼职入职表格来了：TFN、super、bank details。每一栏都像在确认你是否已经学会本地生活。",
+    "choices": [
+      {
+        "text": "认真填完并保存记录",
+        "effects": { "lifeSkill": 4, "money": 4, "sanity": -1 },
+        "flagsAdd": ["work_admin_ready"],
+        "furnitureAdd": [],
+        "resultText": "你还没开始上班，但已经先通过了行政副本。"
+      },
+      {
+        "text": "问店长哪些必须填",
+        "effects": { "english": 2, "money": 3, "lifeSkill": 2 },
+        "flagsAdd": ["work_admin_ready"],
+        "furnitureAdd": [],
+        "resultText": "你没有假装懂，反而少填错了两处。"
+      },
+      {
+        "text": "拖到上班前一晚",
+        "effects": { "money": 2, "sanity": -3 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "表格不会消失，只会在凌晨变得更难看。"
+      }
+    ]
+  },
+  {
+    "id": "au_work_roster_vs_class",
+    "title": "排班撞上tutorial",
+    "category": "basic",
+    "type": "work",
+    "phase": ["mid_semester", "exam"],
+    "majorTags": ["any"],
+    "goalTags": ["money", "stay", "any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 32,
+    "once": true,
+    "conditions": { "minProgress": 24, "maxProgress": 55 },
+    "weightModifiers": [
+      { "condition": "money <= 35", "multiplier": 1.4 }
+    ],
+    "text": "店里排班撞上tutorial。你看着日历，第一次觉得时间管理像一场没有裁判的拉扯。",
+    "choices": [
+      {
+        "text": "和店长协商换班",
+        "effects": { "english": 2, "lifeSkill": 3, "money": 2, "sanity": -2 },
+        "flagsAdd": ["roster_negotiated"],
+        "furnitureAdd": [],
+        "resultText": "你没有直接消失，而是把边界说了出来。"
+      },
+      {
+        "text": "去上班，课后补录播",
+        "effects": { "money": 7, "gpa": -3, "sanity": -2 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "钱包松了口气，学习平台又多了一节未看录播。"
+      },
+      {
+        "text": "拒绝这次班",
+        "effects": { "gpa": 3, "sanity": 2, "money": -3 },
+        "flagsAdd": ["roster_negotiated"],
+        "furnitureAdd": [],
+        "resultText": "你少赚了一点，但保住了这周的课堂节奏。"
+      }
+    ]
+  },
+  {
+    "id": "au_visa_course_progress",
+    "title": "Course progress邮件",
+    "category": "basic",
+    "type": "visa",
+    "phase": ["exam", "career_phase"],
+    "majorTags": ["any"],
+    "goalTags": ["stay", "phd", "any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 28,
+    "once": true,
+    "conditions": { "minProgress": 42, "maxProgress": 80 },
+    "weightModifiers": [
+      { "condition": "gpa <= 35", "multiplier": 1.6 }
+    ],
+    "text": "学校提醒你注意course progress。成绩、COE和签证状态第一次在你脑内连成了一条线。",
+    "choices": [
+      {
+        "text": "约academic advisor",
+        "effects": { "gpa": 3, "visa": 4, "lifeSkill": 2, "sanity": -2 },
+        "flagsAdd": ["course_progress_checked"],
+        "furnitureAdd": [],
+        "resultText": "你把风险从一团恐惧拆成了几项可以处理的任务。"
+      },
+      {
+        "text": "集中补最弱的一门",
+        "effects": { "gpa": 5, "sanity": -4, "visa": 2 },
+        "flagsAdd": ["course_progress_checked"],
+        "furnitureAdd": [],
+        "resultText": "你不再平均焦虑，而是开始定点灭火。"
+      },
+      {
+        "text": "不敢点开邮件",
+        "effects": { "sanity": 2, "gpa": -3, "visa": -4 },
+        "flagsAdd": ["course_progress_ignored"],
+        "furnitureAdd": [],
+        "resultText": "邮件没有追你，但它也没有自己消失。"
+      }
+    ]
+  },
+  {
+    "id": "au_visa_485_english_booking",
+    "title": "毕业签证前的英语成绩",
+    "category": "basic",
+    "type": "visa",
+    "phase": ["career_phase", "graduation"],
+    "majorTags": ["any"],
+    "goalTags": ["stay", "any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 30,
+    "once": true,
+    "conditions": { "minProgress": 68, "maxProgress": 100 },
+    "weightModifiers": [
+      { "condition": "visa <= 45", "multiplier": 1.4 }
+    ],
+    "text": "你开始查毕业后的签证材料。英语成绩、体检、保险、时间线，每一项都像一个会移动的截止日期。",
+    "choices": [
+      {
+        "text": "现在就预约考试",
+        "effects": { "visa": 5, "english": 3, "money": -8, "sanity": -2 },
+        "flagsAdd": ["graduate_visa_english_booked"],
+        "furnitureAdd": [],
+        "resultText": "你把未来的焦虑买成了一个具体日期。"
+      },
+      {
+        "text": "先列材料清单",
+        "effects": { "visa": 4, "lifeSkill": 3, "sanity": -1 },
+        "flagsAdd": ["graduate_visa_checklist"],
+        "furnitureAdd": [],
+        "resultText": "清单没有减少工作量，但它让工作量终于有了形状。"
+      },
+      {
+        "text": "等毕业后再看",
+        "effects": { "sanity": 3, "visa": -5 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "当下轻了一点，未来重了一点。"
+      }
+    ]
+  }
+]

@@ -13,9 +13,10 @@ export function calculateGoalScore(state, data) {
 export function determineEndingType(state, data) {
   const s = state.stats;
   if (s.sanity <= 0) return 'BE';
-  if (s.gpa <= 15 && state.progress >= 70) return 'BE';
-  if (s.money <= 0 && s.visa <= 25) return 'BE';
-  if (s.visa <= 10 && state.goal === 'stay') return 'BE';
+  if (s.gpa <= 8 && state.progress >= 70) return 'BE';
+  if (s.gpa <= 18 && ['phd', 'return_home'].includes(state.goal)) return 'BE';
+  if (s.money <= 0 && s.visa <= 15 && s.sanity <= 30) return 'BE';
+  if (s.visa <= 8 && state.goal === 'stay') return 'BE';
 
   const score = calculateGoalScore(state, data);
   state.goalScore = score;

@@ -62,6 +62,7 @@
       "identity": 4,
       "money": -3
     },
+    "scoreBonus": 4,
     "scoreWeights": {
       "gpa": 0.35,
       "identity": 0.2,
@@ -80,6 +81,7 @@
       "love": 8,
       "gpa": -2
     },
+    "scoreBonus": 14,
     "scoreWeights": {
       "love": 0.3,
       "identity": 0.2,
@@ -115,6 +117,7 @@
       "identity": -2,
       "sanity": 2
     },
+    "scoreBonus": 8,
     "scoreWeights": {
       "identity": 0.4,
       "sanity": 0.15,

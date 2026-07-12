@@ -7,7 +7,7 @@ export function calculateGoalScore(state, data) {
   for (const [key, weight] of Object.entries(weights)) {
     score += (state.stats[key] ?? 0) * weight;
   }
-  return Math.round(score);
+  return Math.round(score + (Number(goal?.scoreBonus) || 0));
 }
 
 export function determineEndingType(state, data) {
@@ -19,11 +19,11 @@ export function determineEndingType(state, data) {
 
   const score = calculateGoalScore(state, data);
   state.goalScore = score;
-  let type = score >= 75 ? 'HE' : score >= 55 ? 'NE' : 'BE';
+  let type = score >= 68 ? 'HE' : score >= 48 ? 'NE' : 'BE';
 
-  if (s.sanity < 25) type = downgrade(type);
+  if (s.sanity < 20) type = downgrade(type);
   if (s.identity < 30 && type === 'HE') type = 'NE';
-  if (s.money < 15 && type === 'HE') type = 'NE';
+  if (s.money <= 0 && s.lifeSkill < 50 && type === 'HE') type = 'NE';
   if (state.goal === 'stay' && s.visa < 25 && type === 'HE') type = 'NE';
   return type;
 }

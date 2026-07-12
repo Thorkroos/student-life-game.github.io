@@ -20,6 +20,7 @@ export function applyChoice(state, event, choice, data) {
   }
 
   if (event?.type) {
+    state.recentEventIds = [event.id, ...(state.recentEventIds || [])].filter(Boolean).slice(0, 5);
     state.recentTypes = [event.type, ...(state.recentTypes || [])].slice(0, 3);
   }
 

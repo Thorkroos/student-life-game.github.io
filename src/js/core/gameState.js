@@ -29,6 +29,7 @@ export function createEmptyState() {
     },
     flags: ['rug_beginning'],
     triggeredEvents: [],
+    recentEventIds: [],
     recentTypes: [],
     currentEventId: null,
     lastResultText: '',

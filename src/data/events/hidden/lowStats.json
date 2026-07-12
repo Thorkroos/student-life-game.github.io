@@ -44,13 +44,13 @@
         "text": "继续硬撑",
         "effects": {
           "gpa": 3,
-          "sanity": -10
+          "sanity": -8
         },
         "flagsAdd": [
           "due_date_distortion"
         ],
         "furnitureAdd": [],
-        "resultText": "你提交了作业，也提交了一部分灵魂。"
+        "resultText": "你提交了作业，但凌晨四点像一枚书签，夹在了你的身体里。"
       }
     ]
   },

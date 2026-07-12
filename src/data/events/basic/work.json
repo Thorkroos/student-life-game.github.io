@@ -104,11 +104,11 @@
         "effects": {
           "gpa": 4,
           "money": 5,
-          "sanity": -10
+          "sanity": -7
         },
         "flagsAdd": [],
         "furnitureAdd": [],
-        "resultText": "你提交了。文件名是final_final_reallyfinal。"
+        "resultText": "你提交了。文件名不体面，但至少出现在了提交记录里。"
       },
       {
         "text": "申请延期",

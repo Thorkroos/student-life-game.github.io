@@ -154,5 +154,161 @@
         "resultText": "你不是逃避全部，只是承认自己需要一点缓冲。"
       }
     ]
+  },
+  {
+    "id": "adv_au_grad_program_deadline",
+    "title": "Graduate program截止夜",
+    "category": "advanced",
+    "type": "career",
+    "phase": ["career_phase", "graduation"],
+    "majorTags": ["business", "stem", "education", "any"],
+    "goalTags": ["stay", "return_home", "money", "unknown", "any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 24,
+    "once": true,
+    "conditions": { "minProgress": 70, "maxProgress": 100 },
+    "weightModifiers": [
+      { "condition": "career <= 55", "multiplier": 1.25 }
+    ],
+    "text": "几个graduate program今晚截止。你看着selection criteria，感觉每个问题都在问：你到底有没有准备好进入下一章？",
+    "choices": [
+      {
+        "text": "认真改每一份cover letter",
+        "effects": { "career": 6, "english": 2, "sanity": -3 },
+        "flagsAdd": ["grad_program_applied"],
+        "furnitureAdd": [],
+        "resultText": "你没有海投一片空白，而是把每封申请都写得像真的认识那家公司。"
+      },
+      {
+        "text": "集中投最匹配的三家",
+        "effects": { "career": 5, "lifeSkill": 2, "sanity": -1 },
+        "flagsAdd": ["grad_program_applied"],
+        "furnitureAdd": [],
+        "resultText": "数量少了一点，但你的精力没有被摊成纸片。"
+      },
+      {
+        "text": "先保存岗位，明天再说",
+        "effects": { "sanity": 2, "career": -2 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "收藏夹很满，提交记录很空。你知道明天会更难一点。"
+      }
+    ]
+  },
+  {
+    "id": "adv_au_alumni_coffee_chat",
+    "title": "校友coffee chat",
+    "category": "advanced",
+    "type": "career",
+    "phase": ["career_phase", "graduation"],
+    "majorTags": ["any"],
+    "goalTags": ["stay", "return_home", "money", "phd", "any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 22,
+    "once": true,
+    "conditions": { "minProgress": 68, "maxProgress": 100 },
+    "weightModifiers": [
+      { "condition": "social >= 55", "multiplier": 1.2 }
+    ],
+    "text": "你约到一个校友线上coffee chat。日历提醒弹出时，你突然开始紧张：这不是面试，却也不是闲聊。",
+    "choices": [
+      {
+        "text": "准备具体问题",
+        "effects": { "career": 4, "english": 2, "social": 2, "sanity": -1 },
+        "flagsAdd": ["alumni_chat_done"],
+        "furnitureAdd": [],
+        "resultText": "你问的问题足够具体，对方也给了比鸡汤更有用的答案。"
+      },
+      {
+        "text": "请对方看一眼简历方向",
+        "effects": { "career": 5, "social": 1, "sanity": -2 },
+        "flagsAdd": ["alumni_chat_done"],
+        "furnitureAdd": [],
+        "resultText": "简历被改得有点疼，但疼在该疼的地方。"
+      },
+      {
+        "text": "临时取消",
+        "effects": { "sanity": 2, "career": -2, "social": -1 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你逃过了一次紧张，也错过了一扇可能没有下次的门。"
+      }
+    ]
+  },
+  {
+    "id": "adv_au_graduation_invitation",
+    "title": "毕业典礼邀请",
+    "category": "advanced",
+    "type": "family",
+    "phase": ["graduation"],
+    "majorTags": ["any"],
+    "goalTags": ["return_home", "escape", "unknown", "any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 20,
+    "once": true,
+    "conditions": { "minProgress": 88, "maxProgress": 100 },
+    "weightModifiers": [],
+    "text": "学校发来毕业典礼邀请。你开始想，要不要让家里人飞来，还是把这一刻简单地留给自己。",
+    "choices": [
+      {
+        "text": "邀请家人来参加",
+        "effects": { "identity": 3, "sanity": -2, "money": -8 },
+        "flagsAdd": ["family_graduation_invited"],
+        "furnitureAdd": [],
+        "resultText": "这很贵，也很麻烦，但有些时刻被见证之后，会变得更真实。"
+      },
+      {
+        "text": "和朋友互相拍照",
+        "effects": { "social": 3, "identity": 2, "sanity": 1 },
+        "flagsAdd": ["graduation_photos"],
+        "furnitureAdd": [],
+        "resultText": "你们笑得有点尴尬，但照片里的自己确实走到了这里。"
+      },
+      {
+        "text": "不参加，省钱省事",
+        "effects": { "money": 5, "sanity": 2, "identity": -1 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你跳过了仪式，但毕业这件事并没有因此作废。"
+      }
+    ]
+  },
+  {
+    "id": "adv_au_last_grocery_run",
+    "title": "最后一次熟门熟路地买菜",
+    "category": "advanced",
+    "type": "identity",
+    "phase": ["graduation"],
+    "majorTags": ["any"],
+    "goalTags": ["unknown", "escape", "return_home", "any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 22,
+    "once": true,
+    "conditions": { "minProgress": 88, "maxProgress": 100 },
+    "weightModifiers": [],
+    "text": "你在超市里熟练地比较价格、看折扣、绕开总是坏掉的自助结账机。某一刻，你意识到自己已经不是刚来时那个人。",
+    "choices": [
+      {
+        "text": "给自己做一顿认真晚饭",
+        "effects": { "lifeSkill": 3, "sanity": 3, "identity": 2, "money": -2 },
+        "flagsAdd": ["last_grocery_dinner"],
+        "furnitureAdd": [],
+        "resultText": "这顿饭没有庆祝横幅，但它把这段生活稳稳收在了胃里。"
+      },
+      {
+        "text": "买点能带走的小零食",
+        "effects": { "identity": 3, "sanity": 1, "money": -3 },
+        "flagsAdd": ["souvenir_snacks"],
+        "furnitureAdd": [],
+        "resultText": "行李箱里多了一点重量，也多了一点可被打开的记忆。"
+      },
+      {
+        "text": "只买最便宜的意面",
+        "effects": { "money": 3, "lifeSkill": 1, "identity": 1 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你还是那个会算账的人，但这次算账时没那么慌了。"
+      }
+    ]
   }
 ]

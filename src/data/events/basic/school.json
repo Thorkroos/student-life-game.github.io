@@ -95,7 +95,7 @@
         "text": "自己全写了",
         "effects": {
           "gpa": 8,
-          "sanity": -12,
+          "sanity": -8,
           "social": -2
         },
         "flagsAdd": [
@@ -103,7 +103,7 @@
           "carried_group_project"
         ],
         "furnitureAdd": [],
-        "resultText": "你保住了分数，也失去了一点对人类协作的信任。"
+        "resultText": "你保住了分数，也对人类协作的信任打了一个折。"
       },
       {
         "text": "给老师发邮件说明分工",
@@ -229,12 +229,12 @@
         "text": "全部精读",
         "effects": {
           "gpa": 7,
-          "sanity": -8,
+          "sanity": -6,
           "identity": 2
         },
         "flagsAdd": [],
         "furnitureAdd": [],
-        "resultText": "你读懂了一半，也老了两岁。"
+        "resultText": "你读懂了一半，也短暂怀疑自己是不是误入了博士资格考。"
       },
       {
         "text": "读摘要和结论",
@@ -292,11 +292,11 @@
         "effects": {
           "gpa": 7,
           "career": 3,
-          "sanity": -10
+          "sanity": -7
         },
         "flagsAdd": [],
         "furnitureAdd": [],
-        "resultText": "凌晨三点，你和bug之间产生了某种畸形亲密。"
+        "resultText": "凌晨三点，你和bug之间产生了某种不健康但有效的熟悉感。"
       },
       {
         "text": "降低demo范围",

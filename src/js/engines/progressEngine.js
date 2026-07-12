@@ -13,3 +13,17 @@ export function updatePhase(state, data) {
 export function getPhaseLabel(state, data) {
   return data.phases.find(item => item.id === state.phase)?.label || state.phase;
 }
+
+export function getPhaseProgress(state, data) {
+  const phaseIndex = data.phases.findIndex(item => item.id === state.phase);
+  const phase = data.phases[phaseIndex] || data.phases[data.phases.length - 1];
+  const span = Math.max(1, phase.maxProgress - phase.minProgress);
+  const phaseProgress = Math.round(((state.progress - phase.minProgress) / span) * 100);
+  return {
+    phase,
+    phaseIndex,
+    phaseProgress: Math.max(0, Math.min(100, phaseProgress)),
+    nextPhase: data.phases[phaseIndex + 1] || null,
+    totalPhases: data.phases.length
+  };
+}

@@ -1,4 +1,4 @@
-import { statusPanelHtml } from './renderStatusPanel.js';
+import { statusPanelHtml, timelineHeaderHtml } from './renderStatusPanel.js';
 import { saveGame, clearSave } from '../systems/saveSystem.js';
 import { renderStart } from './renderStart.js';
 
@@ -22,6 +22,7 @@ export function renderGame(app, data, state, event, handlers = {}) {
           <button class="btn small danger" id="quit-game">回到首页</button>
         </div>
       </div>
+      ${timelineHeaderHtml(state, data)}
       <section class="grid game-grid">
         ${statusPanelHtml(state, data)}
         <article class="card">

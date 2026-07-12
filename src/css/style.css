@@ -54,6 +54,54 @@ p { line-height: 1.7; color: var(--muted); }
 .grid { display: grid; gap: 18px; }
 .creator-grid { grid-template-columns: minmax(0, 1fr) minmax(320px, 420px); align-items: start; }
 .game-grid { grid-template-columns: 290px minmax(0, 1fr) 250px; align-items: start; }
+.timeline-band {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr);
+  gap: 18px;
+  align-items: center;
+  border: 1px solid var(--line);
+  background: rgba(23,27,37,0.72);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px 20px;
+  margin-bottom: 18px;
+}
+.timeline-main h2 { margin-bottom: 6px; font-size: 24px; }
+.timeline-main p { margin: 0; }
+.timeline-progress { min-width: 0; }
+.progress-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.progress-caption strong { color: var(--text); font-weight: 700; text-align: right; }
+.progress-wrap.large { height: 12px; margin: 8px 0 10px; }
+.timeline-steps {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+}
+.timeline-step {
+  min-width: 0;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px;
+  padding: 6px 7px;
+  color: var(--muted);
+  background: rgba(255,255,255,0.04);
+  font-size: 11px;
+  line-height: 1.25;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+.timeline-step.done { color: rgba(255,255,255,0.68); border-color: rgba(159,211,199,0.25); }
+.timeline-step.active {
+  color: #1b1607;
+  background: var(--accent);
+  border-color: transparent;
+  font-weight: 800;
+}
 .card {
   background: rgba(23,27,37,0.88);
   border: 1px solid var(--line);
@@ -92,6 +140,18 @@ input, select {
   color: var(--muted);
   font-size: 12px;
 }
+.phase-panel {
+  display: grid;
+  gap: 4px;
+  border: 1px solid rgba(242,193,78,0.32);
+  border-radius: 12px;
+  background: rgba(242,193,78,0.08);
+  padding: 12px;
+  margin-bottom: 12px;
+}
+.phase-panel span,
+.phase-panel small { color: var(--muted); font-size: 12px; }
+.phase-panel strong { color: var(--accent); font-size: 18px; line-height: 1.25; }
 .stat-value { font-weight: 800; color: var(--accent-2); min-width: 32px; text-align: right; }
 .event-title { font-size: 28px; }
 .event-text, .result-text {
@@ -131,5 +191,7 @@ input, select {
 .good { color: var(--good); }
 @media (max-width: 980px) {
   .creator-grid, .game-grid { grid-template-columns: 1fr; }
+  .timeline-band { grid-template-columns: 1fr; }
+  .timeline-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .app-shell { padding: 16px; }
 }

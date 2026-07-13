@@ -8,11 +8,11 @@
     "majorTags": ["any"],
     "goalTags": ["stay", "phd", "unknown", "any"],
     "backgroundTags": ["any"],
-    "baseWeight": 20,
+    "baseWeight": 8,
     "once": true,
     "conditions": { "minProgress": 62, "maxProgress": 100 },
     "weightModifiers": [
-      { "condition": "visa <= 50", "multiplier": 1.35 }
+      { "condition": "visa <= 50", "multiplier": 1.25 }
     ],
     "text": "群里突然开始刷屏：签证费用、材料要求、毕业后路径好像又变了。每个人都说自己有内部消息。",
     "choices": [
@@ -48,11 +48,11 @@
     "majorTags": ["any"],
     "goalTags": ["stay", "phd", "any"],
     "backgroundTags": ["any"],
-    "baseWeight": 18,
+    "baseWeight": 7,
     "once": true,
     "conditions": { "minProgress": 30, "maxProgress": 88 },
     "weightModifiers": [
-      { "condition": "sanity <= 45", "multiplier": 1.25 }
+      { "condition": "sanity <= 45", "multiplier": 1.2 }
     ],
     "text": "中介说“现在不准备就晚了”，并发来一个看起来很专业的套餐表。你分不清这是提醒，还是销售。",
     "choices": [
@@ -88,7 +88,7 @@
     "majorTags": ["any"],
     "goalTags": ["stay", "return_home", "unknown", "any"],
     "backgroundTags": ["any"],
-    "baseWeight": 16,
+    "baseWeight": 7,
     "once": true,
     "conditions": { "minProgress": 68, "maxProgress": 100 },
     "weightModifiers": [],

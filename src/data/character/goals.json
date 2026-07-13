@@ -2,6 +2,7 @@
   {
     "id": "stay",
     "label": "我要留下",
+    "difficulty": "困难",
     "description": "Visa、Career、English 是关键。",
     "effects": {
       "visa": 8,
@@ -20,6 +21,7 @@
   {
     "id": "return_home",
     "label": "我要镀金回国",
+    "difficulty": "困难",
     "description": "GPA、Career、Identity 是关键。",
     "effects": {
       "gpa": 4,

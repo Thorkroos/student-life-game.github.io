@@ -10,7 +10,10 @@ export function renderCreator(app, data) {
   let remaining = data.gameConfig.freePoints;
   const playableGoals = data.goals.filter(item => !item.hidden);
 
-  const options = (items) => items.map(item => `<option value="${item.id}">${item.label}</option>`).join('');
+  const options = (items) => items.map(item => {
+    const difficulty = item.difficulty ? `（${item.difficulty}）` : '';
+    return `<option value="${item.id}">${item.label}${difficulty}</option>`;
+  }).join('');
 
   app.innerHTML = `
     <main class="container">
@@ -77,7 +80,8 @@ export function renderCreator(app, data) {
   function setDesc(id, items) {
     const selected = document.querySelector(`#${id}`).value;
     const item = items.find(x => x.id === selected);
-    document.querySelector(`#${id}-desc`).textContent = item?.description || '';
+    const difficulty = item?.difficulty ? `难度：${item.difficulty}。` : '';
+    document.querySelector(`#${id}-desc`).textContent = `${difficulty}${item?.description || ''}`;
   }
 
   function renderAlloc() {

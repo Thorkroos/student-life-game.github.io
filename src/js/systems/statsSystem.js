@@ -2,6 +2,7 @@ import { clamp } from '../core/random.js';
 
 export function applyStatEffects(state, effects, config) {
   for (const [key, value] of Object.entries(effects || {})) {
+    if (key === 'love' && state.disableLoveContent !== false) continue;
     if (!(key in state.stats)) continue;
     state.stats[key] = clamp(state.stats[key] + Number(value), config.statMin, config.statMax);
   }

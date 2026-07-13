@@ -75,6 +75,7 @@
   {
     "id": "love",
     "label": "我要找对象",
+    "hidden": true,
     "description": "Love、Identity、Social 是关键。",
     "effects": {
       "social": 5,

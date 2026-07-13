@@ -8,6 +8,7 @@ const ALLOC_KEYS = [...MAIN_STAT_KEYS, 'identity'];
 export function renderCreator(app, data) {
   const allocations = Object.fromEntries(ALLOC_KEYS.map(key => [key, 0]));
   let remaining = data.gameConfig.freePoints;
+  const playableGoals = data.goals.filter(item => !item.hidden);
 
   const options = (items) => items.map(item => `<option value="${item.id}">${item.label}</option>`).join('');
 
@@ -50,7 +51,7 @@ export function renderCreator(app, data) {
           </div>
           <div class="form-row">
             <label>出国目标</label>
-            <select id="goal">${options(data.goals)}</select>
+            <select id="goal">${options(playableGoals)}</select>
             <div id="goal-desc" class="option-desc"></div>
           </div>
           <div class="actions">
@@ -61,7 +62,7 @@ export function renderCreator(app, data) {
           <h2>自由分配点数</h2>
           <p>剩余点数：<strong id="remaining">${remaining}</strong></p>
           <div id="alloc-list"></div>
-          <p class="footer-note">开局还会有轻微随机波动。Love 默认从 0 开始，靠事件发展。</p>
+          <p class="footer-note">开局还会有轻微随机波动。城市和住宿会随机分配，并影响部分隐藏事件。</p>
         </aside>
       </section>
     </main>`;
@@ -70,7 +71,7 @@ export function renderCreator(app, data) {
     setDesc('duration', data.durations);
     setDesc('major', data.majors);
     setDesc('background', data.backgrounds);
-    setDesc('goal', data.goals);
+    setDesc('goal', playableGoals);
   }
 
   function setDesc(id, items) {

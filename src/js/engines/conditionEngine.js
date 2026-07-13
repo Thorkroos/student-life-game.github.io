@@ -31,10 +31,17 @@ export function eventMatches(state, event) {
   if (event.majorTags && !hasAnyTag(event.majorTags, state.major)) return false;
   if (event.goalTags && !hasAnyTag(event.goalTags, state.goal)) return false;
   if (event.backgroundTags && !hasAnyTag(event.backgroundTags, state.background)) return false;
+  if (event.cityTags && !hasAnyTag(event.cityTags, state.city)) return false;
+  if (event.accommodationTags && !hasAnyTag(event.accommodationTags, state.accommodation)) return false;
+  if (event.type === 'dating' && loveContentIsHidden(state, event)) return false;
   if (!checkStats(state.stats, c.minStats, c.maxStats)) return false;
   if (!checkFlags(state, c.requiredFlags, c.blockedFlags)) return false;
   if (event.once && state.triggeredEvents?.includes(event.id)) return false;
   return true;
+}
+
+function loveContentIsHidden(state, event) {
+  return event.disableWhenLoveHidden !== false && state.disableLoveContent !== false;
 }
 
 export function ruleMatches(state, rule, endingType = null) {

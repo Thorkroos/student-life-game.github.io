@@ -3,5 +3,6 @@
   "statMax": 100,
   "freePoints": 40,
   "defaultBaseStat": 40,
-  "defaultLanguage": "zh-CN"
+  "defaultLanguage": "zh-CN",
+  "disableLoveContent": true
 }

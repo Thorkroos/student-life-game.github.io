@@ -1,0 +1,118 @@
+[
+  {
+    "id": "au_admin_usi_student_id",
+    "title": "USI和学生证",
+    "category": "basic",
+    "type": "life",
+    "phase": ["arrival", "adapt"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 42,
+    "once": true,
+    "conditions": { "minProgress": 0, "maxProgress": 24 },
+    "weightModifiers": [],
+    "text": "学校系统提醒你补全 USI 和学生证信息。你发现留学第一周不是诗和远方，是账号、验证码和证件照。",
+    "choices": [
+      {
+        "text": "一次性把信息补齐",
+        "effects": { "lifeSkill": 4, "visa": 2, "sanity": -1 },
+        "flagsAdd": ["student_identity_ready"],
+        "furnitureAdd": [],
+        "resultText": "系统终于不再弹红字。你离“能正常使用学校服务”近了一大步。"
+      },
+      {
+        "text": "先拍一张能用的证件照",
+        "effects": { "lifeSkill": 2, "identity": 1, "sanity": 1 },
+        "flagsAdd": ["student_identity_ready"],
+        "furnitureAdd": [],
+        "resultText": "照片不算好看，但它足够证明你是你。"
+      },
+      {
+        "text": "把邮件标星，晚点处理",
+        "effects": { "sanity": 2, "lifeSkill": -2, "visa": -1 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "星标邮件像一个礼貌的地雷，暂时安静地躺在那里。"
+      }
+    ]
+  },
+  {
+    "id": "au_admin_address_update",
+    "title": "更新澳洲住址",
+    "category": "basic",
+    "type": "visa",
+    "phase": ["arrival", "adapt"],
+    "majorTags": ["any"],
+    "goalTags": ["stay", "phd", "return_home", "any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 40,
+    "once": true,
+    "conditions": { "minProgress": 0, "maxProgress": 30 },
+    "weightModifiers": [],
+    "text": "你换了临时住处，又收到学校提醒：请确保联系方式和住址是最新的。搬家在系统里也要留下脚印。",
+    "choices": [
+      {
+        "text": "更新学校和关键账户",
+        "effects": { "visa": 3, "lifeSkill": 3, "sanity": -1 },
+        "flagsAdd": ["address_updated"],
+        "furnitureAdd": [],
+        "resultText": "你把地址填进几个不同系统，像是在现实里钉下一枚坐标。"
+      },
+      {
+        "text": "顺手整理租房邮件",
+        "effects": { "lifeSkill": 4, "money": 1, "sanity": -1 },
+        "flagsAdd": ["address_updated", "rental_docs_sorted"],
+        "furnitureAdd": [],
+        "resultText": "合同、押金、入住照片终于不再散落在聊天记录深处。"
+      },
+      {
+        "text": "反正还能收到邮件，先不改",
+        "effects": { "sanity": 2, "visa": -3 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你暂时省下了五分钟，也给未来的自己留了一个追邮件副本。"
+      }
+    ]
+  },
+  {
+    "id": "au_admin_checklist_catchup",
+    "title": "行政清单补课",
+    "category": "basic",
+    "type": "life",
+    "phase": ["mid_semester", "break"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 22,
+    "once": true,
+    "conditions": { "minProgress": 24, "maxProgress": 62 },
+    "weightModifiers": [
+      { "condition": "lifeSkill <= 45", "multiplier": 1.35 }
+    ],
+    "text": "某个周末，你突然发现还有一堆开局行政事项没收尾。它们没有截止提示，但会在需要时突然变成门槛。",
+    "choices": [
+      {
+        "text": "花半天逐项清掉",
+        "effects": { "lifeSkill": 5, "visa": 2, "sanity": -2 },
+        "flagsAdd": ["admin_catchup_done"],
+        "furnitureAdd": [],
+        "resultText": "你没有变得更自由，但系统少了很多可以卡你的地方。"
+      },
+      {
+        "text": "只处理马上会用到的",
+        "effects": { "lifeSkill": 3, "sanity": 1 },
+        "flagsAdd": ["admin_catchup_done"],
+        "furnitureAdd": [],
+        "resultText": "这不是理想主义的整理，但很现实。"
+      },
+      {
+        "text": "继续靠临场发挥",
+        "effects": { "sanity": 2, "lifeSkill": -2, "visa": -1 },
+        "flagsAdd": ["admin_debt"],
+        "furnitureAdd": [],
+        "resultText": "临场发挥很好用，直到系统不给你发挥空间。"
+      }
+    ]
+  }
+]

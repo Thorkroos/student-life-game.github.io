@@ -7,6 +7,8 @@ export function createEmptyState() {
     major: '',
     background: '',
     goal: '',
+    city: '',
+    accommodation: '',
     turn: 0,
     maxTurns: 40,
     progress: 0,
@@ -34,6 +36,7 @@ export function createEmptyState() {
     currentEventId: null,
     lastResultText: '',
     completed: false,
-    endingHistory: []
+    endingHistory: [],
+    disableLoveContent: true
   };
 }

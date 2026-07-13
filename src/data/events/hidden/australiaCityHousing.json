@@ -1,0 +1,172 @@
+[
+  {
+    "id": "hidden_city_sydney_rent_shock",
+    "title": "悉尼租金现实",
+    "category": "hidden",
+    "type": "housing",
+    "phase": ["adapt", "mid_semester", "career_phase"],
+    "cityTags": ["sydney"],
+    "accommodationTags": ["share_house", "outer_suburb", "any"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 18,
+    "once": true,
+    "conditions": { "minProgress": 8, "maxProgress": 80 },
+    "weightModifiers": [
+      { "condition": "money <= 45", "multiplier": 1.35 }
+    ],
+    "text": "你刷新租房信息，发现“离学校不远”和“价格正常”很少同时出现。悉尼用租金教你什么叫现实主义。",
+    "choices": [
+      {
+        "text": "接受远一点但稳定的房子",
+        "effects": { "money": 4, "sanity": -2, "lifeSkill": 3 },
+        "flagsAdd": ["outer_commute_accepted"],
+        "furnitureAdd": [],
+        "resultText": "通勤变长了，但你至少不用每天和租房页面互相折磨。"
+      },
+      {
+        "text": "继续抢近学校房源",
+        "effects": { "money": -6, "sanity": -3, "social": 1 },
+        "flagsAdd": ["rental_competition"],
+        "furnitureAdd": [],
+        "resultText": "每次看房都像投简历，只是这次面试官是房东。"
+      }
+    ]
+  },
+  {
+    "id": "hidden_city_melbourne_weather_loop",
+    "title": "墨尔本天气循环",
+    "category": "hidden",
+    "type": "life",
+    "phase": ["adapt", "mid_semester", "break"],
+    "cityTags": ["melbourne"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 16,
+    "once": true,
+    "conditions": { "minProgress": 8, "maxProgress": 65 },
+    "weightModifiers": [],
+    "text": "墨尔本一天变了三次脸。你开始理解为什么本地人讨论天气时像在讨论人格。",
+    "choices": [
+      {
+        "text": "建立出门装备清单",
+        "effects": { "lifeSkill": 3, "sanity": 2 },
+        "flagsAdd": ["weather_prepared"],
+        "furnitureAdd": [],
+        "resultText": "外套、伞、水杯、充电宝。你越来越像一个能活过整天的人。"
+      },
+      {
+        "text": "把坏天气当作宅家理由",
+        "effects": { "sanity": 1, "social": -2, "gpa": 2 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你没有出门，但至少补了一点进度。"
+      }
+    ]
+  },
+  {
+    "id": "hidden_accommodation_share_house_cleaning",
+    "title": "Share house清洁表",
+    "category": "hidden",
+    "type": "housing",
+    "phase": ["adapt", "mid_semester", "exam"],
+    "accommodationTags": ["share_house"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 20,
+    "once": true,
+    "conditions": { "minProgress": 8, "maxProgress": 55 },
+    "weightModifiers": [],
+    "text": "厨房水槽里出现了没人承认的锅。你们的 share house 终于迎来了清洁制度危机。",
+    "choices": [
+      {
+        "text": "提出轮值表",
+        "effects": { "lifeSkill": 4, "social": 1, "sanity": -1 },
+        "flagsAdd": ["cleaning_roster"],
+        "furnitureAdd": [],
+        "resultText": "制度不能解决所有人性问题，但至少让锅有了归属。"
+      },
+      {
+        "text": "自己默默收拾",
+        "effects": { "sanity": -3, "lifeSkill": 2, "social": 1 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "厨房干净了，你心里的账本变厚了。"
+      },
+      {
+        "text": "在群里发一句“谁的锅”",
+        "effects": { "sanity": 1, "social": -2 },
+        "flagsAdd": ["wechat_group_chaos"],
+        "furnitureAdd": [],
+        "resultText": "群里安静了十分钟，然后有人发了一个表情包。"
+      }
+    ]
+  },
+  {
+    "id": "hidden_accommodation_student_accommodation_fire_alarm",
+    "title": "学生公寓火警",
+    "category": "hidden",
+    "type": "housing",
+    "phase": ["adapt", "mid_semester"],
+    "accommodationTags": ["student_accommodation"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 16,
+    "once": true,
+    "conditions": { "minProgress": 8, "maxProgress": 45 },
+    "weightModifiers": [],
+    "text": "凌晨，学生公寓火警响了。大家穿着睡衣站在楼下，像一场没有人想参加的 orientation。",
+    "choices": [
+      {
+        "text": "按流程撤离并确认规定",
+        "effects": { "lifeSkill": 3, "sanity": -1, "social": 1 },
+        "flagsAdd": ["fire_alarm_drill"],
+        "furnitureAdd": [],
+        "resultText": "你困得想骂人，但至少知道真正出事时该往哪走。"
+      },
+      {
+        "text": "和楼下同学聊两句",
+        "effects": { "social": 3, "sanity": -1 },
+        "flagsAdd": ["fire_alarm_drill"],
+        "furnitureAdd": [],
+        "resultText": "灾难式社交也是社交。"
+      }
+    ]
+  },
+  {
+    "id": "hidden_accommodation_outer_suburb_last_train",
+    "title": "末班车倒计时",
+    "category": "hidden",
+    "type": "life",
+    "phase": ["mid_semester", "career_phase"],
+    "accommodationTags": ["outer_suburb"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 18,
+    "once": true,
+    "conditions": { "minProgress": 24, "maxProgress": 88 },
+    "weightModifiers": [],
+    "text": "活动结束时，你突然意识到末班车快到了。远郊房租便宜，但每次夜晚都要和时刻表谈判。",
+    "choices": [
+      {
+        "text": "提前撤，赶上末班车",
+        "effects": { "money": 2, "sanity": 1, "social": -2 },
+        "flagsAdd": ["last_train_made"],
+        "furnitureAdd": [],
+        "resultText": "你保住了钱包，也错过了后半场故事。"
+      },
+      {
+        "text": "留下，打车回去",
+        "effects": { "social": 3, "money": -12, "sanity": -1 },
+        "flagsAdd": ["rideshare_late_night"],
+        "furnitureAdd": [],
+        "resultText": "社交没有免费，远郊尤其没有。"
+      }
+    ]
+  }
+]

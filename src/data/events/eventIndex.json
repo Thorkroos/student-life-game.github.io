@@ -2,8 +2,10 @@
   "basic": [
     "basic/arrival.json",
     "basic/australiaArrival.json",
+    "basic/australiaAdmin.json",
     "basic/school.json",
     "basic/australiaSchool.json",
+    "basic/australiaSupport.json",
     "basic/majors.json",
     "basic/goals.json",
     "basic/life.json",
@@ -21,7 +23,9 @@
   "hidden": [
     "hidden/highStats.json",
     "hidden/lowStats.json",
-    "hidden/australiaPressure.json"
+    "hidden/australiaPressure.json",
+    "hidden/australiaPolicyInfo.json",
+    "hidden/australiaCityHousing.json"
   ],
   "advanced": [
     "advanced/stay.json",

@@ -158,5 +158,45 @@
         "resultText": "当下轻了一点，未来重了一点。"
       }
     ]
+  },
+  {
+    "id": "au_work_unpaid_trial",
+    "title": "无薪试工的味道",
+    "category": "basic",
+    "type": "work",
+    "phase": ["adapt", "mid_semester", "break"],
+    "majorTags": ["any"],
+    "goalTags": ["money", "stay", "any"],
+    "backgroundTags": ["ordinary", "all_in", "any"],
+    "baseWeight": 28,
+    "once": true,
+    "conditions": { "minProgress": 8, "maxProgress": 65 },
+    "weightModifiers": [
+      { "condition": "money <= 30", "multiplier": 1.5 }
+    ],
+    "text": "一家店说可以先试几个小时，之后再看合不合适。你听见“机会”，也听见一点不对劲。",
+    "choices": [
+      {
+        "text": "问清是否计薪",
+        "effects": { "english": 3, "lifeSkill": 4, "sanity": -1 },
+        "flagsAdd": ["unpaid_trial_questioned"],
+        "furnitureAdd": [],
+        "resultText": "对方语气变虚了。你确认自己的直觉不是多想。"
+      },
+      {
+        "text": "先做完再说",
+        "effects": { "career": 1, "sanity": -5, "money": -1 },
+        "flagsAdd": ["unpaid_trial_taken"],
+        "furnitureAdd": [],
+        "resultText": "你获得了经验，也获得了一种被占便宜后的清醒。"
+      },
+      {
+        "text": "直接拒绝",
+        "effects": { "identity": 3, "sanity": 2, "money": -2 },
+        "flagsAdd": ["unpaid_trial_refused"],
+        "furnitureAdd": [],
+        "resultText": "你没有拿到这份工，但保住了一个底线。"
+      }
+    ]
   }
 ]

@@ -1,6 +1,8 @@
 import { STAT_NAMES, MAIN_STAT_KEYS } from '../core/constants.js';
 import { getStatLabel } from '../systems/statsSystem.js';
 import { getRoomLabel } from '../systems/roomSystem.js';
+import { getAdminTaskProgress } from '../systems/adminSystem.js';
+import { getAccommodationLabel, getCityLabel } from '../systems/contextSystem.js';
 import { getPhaseProgress } from '../engines/progressEngine.js';
 
 export function timelineHeaderHtml(state, data) {
@@ -29,6 +31,12 @@ export function timelineHeaderHtml(state, data) {
 }
 
 export function statusPanelHtml(state, data) {
+  const adminProgress = getAdminTaskProgress(state, data);
+  const adminItems = adminProgress.tasks.map(task => `
+    <div class="check-row ${task.completed ? 'done' : ''}">
+      <span>${task.completed ? '✓' : '·'}</span>
+      <strong>${task.label}</strong>
+    </div>`).join('');
   const rows = MAIN_STAT_KEYS.map(key => `
     <div class="status-row">
       <span>${STAT_NAMES[key]}</span>
@@ -43,11 +51,22 @@ export function statusPanelHtml(state, data) {
         <strong>${phaseInfo.phase.label}</strong>
         <small>第 ${state.turn + 1} / ${state.maxTurns} 回合</small>
       </div>
+      <div class="context-panel">
+        <div><span>城市</span><strong>${getCityLabel(state, data)}</strong></div>
+        <div><span>住宿</span><strong>${getAccommodationLabel(state, data)}</strong></div>
+      </div>
       <div class="progress-caption">
         <span>总进度</span>
         <strong>${state.progress}%</strong>
       </div>
       <div class="progress-wrap"><div class="progress-bar" style="width:${state.progress}%"></div></div>
+      <div class="admin-panel">
+        <div class="progress-caption">
+          <span>行政清单</span>
+          <strong>${adminProgress.completedCount}/${adminProgress.totalCount}</strong>
+        </div>
+        <div class="admin-list">${adminItems}</div>
+      </div>
       ${rows}
       <div class="status-row"><span>房间</span><strong>${getRoomLabel(state, data)}</strong></div>
       <div class="status-row"><span>目标完成度</span><strong>${state.goalScore ?? '???'}</strong></div>

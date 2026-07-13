@@ -1,0 +1,57 @@
+[
+  {
+    "id": "sydney",
+    "label": "悉尼",
+    "description": "机会密度高，租金和通勤压力也更明显。",
+    "effects": {
+      "career": 4,
+      "money": -8,
+      "social": 2,
+      "sanity": -2
+    }
+  },
+  {
+    "id": "melbourne",
+    "label": "墨尔本",
+    "description": "校园和文化生活丰富，天气、租房和咖啡账单都很有存在感。",
+    "effects": {
+      "identity": 3,
+      "social": 2,
+      "money": -5,
+      "lifeSkill": 1
+    }
+  },
+  {
+    "id": "brisbane",
+    "label": "布里斯班",
+    "description": "生活成本和节奏稍缓，机会需要更主动地找。",
+    "effects": {
+      "sanity": 3,
+      "money": -2,
+      "career": -1,
+      "lifeSkill": 2
+    }
+  },
+  {
+    "id": "adelaide",
+    "label": "阿德莱德",
+    "description": "生活成本较稳，圈子小，路径更依赖长期经营。",
+    "effects": {
+      "money": 2,
+      "sanity": 2,
+      "social": -2,
+      "identity": 2
+    }
+  },
+  {
+    "id": "perth",
+    "label": "珀斯",
+    "description": "距离感强，资源不差，但社交和职业信息更需要自己挖。",
+    "effects": {
+      "money": 1,
+      "lifeSkill": 2,
+      "career": 1,
+      "social": -2
+    }
+  }
+]

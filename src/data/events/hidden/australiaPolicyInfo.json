@@ -1,0 +1,120 @@
+[
+  {
+    "id": "hidden_au_policy_fee_rumour",
+    "title": "签证费用传言",
+    "category": "hidden",
+    "type": "visa",
+    "phase": ["career_phase", "graduation"],
+    "majorTags": ["any"],
+    "goalTags": ["stay", "phd", "unknown", "any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 20,
+    "once": true,
+    "conditions": { "minProgress": 62, "maxProgress": 100 },
+    "weightModifiers": [
+      { "condition": "visa <= 50", "multiplier": 1.35 }
+    ],
+    "text": "群里突然开始刷屏：签证费用、材料要求、毕业后路径好像又变了。每个人都说自己有内部消息。",
+    "choices": [
+      {
+        "text": "只看官方页面和学校说明",
+        "effects": { "visa": 5, "lifeSkill": 3, "sanity": -1 },
+        "flagsAdd": ["official_source_checked", "info_clarity"],
+        "furnitureAdd": [],
+        "resultText": "官方页面不温柔，但至少不会为了成交吓你。"
+      },
+      {
+        "text": "问学校国际学生服务",
+        "effects": { "visa": 4, "english": 2, "sanity": 1 },
+        "flagsAdd": ["official_source_checked", "support_service_used"],
+        "furnitureAdd": [],
+        "resultText": "你没有得到人生答案，但得到了一个当前版本的流程。"
+      },
+      {
+        "text": "刷论坛刷到凌晨",
+        "effects": { "visa": -2, "sanity": -6, "identity": -1 },
+        "flagsAdd": ["info_pollution", "visa_forum_spiral"],
+        "furnitureAdd": [],
+        "resultText": "你看了很多故事，却更难分清哪些和自己有关。"
+      }
+    ]
+  },
+  {
+    "id": "hidden_au_agent_sales_pressure",
+    "title": "中介的限时紧迫感",
+    "category": "hidden",
+    "type": "visa",
+    "phase": ["mid_semester", "career_phase"],
+    "majorTags": ["any"],
+    "goalTags": ["stay", "phd", "any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 18,
+    "once": true,
+    "conditions": { "minProgress": 30, "maxProgress": 88 },
+    "weightModifiers": [
+      { "condition": "sanity <= 45", "multiplier": 1.25 }
+    ],
+    "text": "中介说“现在不准备就晚了”，并发来一个看起来很专业的套餐表。你分不清这是提醒，还是销售。",
+    "choices": [
+      {
+        "text": "把信息拿去交叉核对",
+        "effects": { "visa": 4, "lifeSkill": 4, "sanity": -1 },
+        "flagsAdd": ["info_clarity"],
+        "furnitureAdd": [],
+        "resultText": "你没有立刻付款，而是先把恐惧拆成可验证的信息。"
+      },
+      {
+        "text": "买一次基础咨询",
+        "effects": { "visa": 4, "money": -10, "sanity": 1 },
+        "flagsAdd": ["agent_consulted"],
+        "furnitureAdd": [],
+        "resultText": "你花钱买到一些清楚，也买到一点新的焦虑。"
+      },
+      {
+        "text": "被吓到直接下单",
+        "effects": { "visa": 2, "money": -18, "sanity": -3 },
+        "flagsAdd": ["panic_paid_agent", "info_pollution"],
+        "furnitureAdd": [],
+        "resultText": "你得到了服务，也不确定自己是不是先被恐惧说服了。"
+      }
+    ]
+  },
+  {
+    "id": "hidden_au_policy_change_news",
+    "title": "政策风向新闻",
+    "category": "hidden",
+    "type": "identity",
+    "phase": ["career_phase", "graduation"],
+    "majorTags": ["any"],
+    "goalTags": ["stay", "return_home", "unknown", "any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 16,
+    "once": true,
+    "conditions": { "minProgress": 68, "maxProgress": 100 },
+    "weightModifiers": [],
+    "text": "你看到一篇关于国际学生政策和签证成本的新闻。评论区吵得很响，你突然意识到自己也是某种系统里的变量。",
+    "choices": [
+      {
+        "text": "把新闻当背景，不当判决",
+        "effects": { "identity": 4, "sanity": 2, "visa": 1 },
+        "flagsAdd": ["policy_noise_processed"],
+        "furnitureAdd": [],
+        "resultText": "政策会变，但你不能把自己完全交给风向。"
+      },
+      {
+        "text": "重新评估留下和回国",
+        "effects": { "identity": 5, "visa": 2, "sanity": -2 },
+        "flagsAdd": ["policy_noise_processed", "post_study_path_chosen"],
+        "furnitureAdd": [],
+        "resultText": "你没有立刻改变目标，但目标终于接受了一次现实压力测试。"
+      },
+      {
+        "text": "越看越愤怒",
+        "effects": { "sanity": -4, "identity": 1 },
+        "flagsAdd": ["info_pollution"],
+        "furnitureAdd": [],
+        "resultText": "愤怒很真实，但它暂时没有告诉你下一步要做什么。"
+      }
+    ]
+  }
+]

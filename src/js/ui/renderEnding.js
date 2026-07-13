@@ -1,4 +1,4 @@
-import { STAT_KEYS, STAT_NAMES } from '../core/constants.js';
+import { REPORT_STAT_KEYS, STAT_NAMES } from '../core/constants.js';
 import { getUnlockedAchievements } from '../systems/achievementSystem.js';
 import { clearSave } from '../systems/saveSystem.js';
 import { renderStart } from './renderStart.js';
@@ -16,7 +16,7 @@ export function renderEnding(app, data, state, ending) {
         <p>${ending.description}</p>
         <p><strong>开局目标：</strong>${goal}　<strong>目标完成度：</strong>${state.goalScore ?? ending.goalScore ?? '???'}</p>
         <div class="report-grid">
-          ${STAT_KEYS.map(key => `
+          ${REPORT_STAT_KEYS.map(key => `
             <div class="report-item">
               <span>${STAT_NAMES[key]}</span>
               <strong>${state.stats[key]}</strong>

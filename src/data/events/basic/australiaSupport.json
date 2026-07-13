@@ -1,0 +1,124 @@
+[
+  {
+    "id": "au_support_counselling_booking",
+    "title": "预约counselling",
+    "category": "basic",
+    "type": "mental",
+    "phase": ["mid_semester", "exam", "career_phase"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 24,
+    "once": true,
+    "conditions": { "minProgress": 24, "maxProgress": 88 },
+    "weightModifiers": [
+      { "condition": "sanity <= 35", "multiplier": 1.8 }
+    ],
+    "text": "学校 counselling 页面终于被你打开。预约并不等于问题解决，但至少说明你承认自己不是无限电池。",
+    "choices": [
+      {
+        "text": "预约一个能排上的时间",
+        "effects": { "sanity": 5, "lifeSkill": 2, "gpa": 1 },
+        "flagsAdd": ["support_service_used"],
+        "furnitureAdd": [],
+        "resultText": "你没有突然好起来，但你不再只靠硬撑来证明自己还行。"
+      },
+      {
+        "text": "先写下想说的问题",
+        "effects": { "sanity": 3, "identity": 3, "lifeSkill": 1 },
+        "flagsAdd": ["support_service_used"],
+        "furnitureAdd": [],
+        "resultText": "问题被写下来之后，终于从一团雾变成几句话。"
+      },
+      {
+        "text": "觉得还没到那一步",
+        "effects": { "sanity": -2, "identity": -1 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你关掉页面，心里那个小窗口却没有真的关上。"
+      }
+    ]
+  },
+  {
+    "id": "au_support_tenancy_advice",
+    "title": "租房法律服务",
+    "category": "basic",
+    "type": "housing",
+    "phase": ["mid_semester", "break", "graduation"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 22,
+    "once": true,
+    "conditions": {
+      "minProgress": 24,
+      "maxProgress": 100,
+      "requiredFlags": ["landlord_denial"]
+    },
+    "weightModifiers": [],
+    "text": "房东那封邮件越看越不对劲。你发现学校或本地社区可能有租房咨询服务，不一定要独自和中介拉扯。",
+    "choices": [
+      {
+        "text": "预约咨询并整理证据",
+        "effects": { "lifeSkill": 5, "money": 4, "sanity": -1 },
+        "flagsAdd": ["tenancy_advice_used"],
+        "furnitureAdd": [],
+        "resultText": "你不一定马上赢，但你终于知道哪些话不是房东说了算。"
+      },
+      {
+        "text": "先发一封更正式的邮件",
+        "effects": { "english": 3, "lifeSkill": 3, "sanity": -2 },
+        "flagsAdd": ["tenancy_advice_used"],
+        "furnitureAdd": [],
+        "resultText": "语气越冷静，边界越清楚。"
+      },
+      {
+        "text": "不想再折腾，算了",
+        "effects": { "sanity": 2, "money": -6, "identity": -1 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你买回了一点安静，也可能把责任替别人付掉了。"
+      }
+    ]
+  },
+  {
+    "id": "au_support_career_advisor",
+    "title": "Career advisor改简历",
+    "category": "basic",
+    "type": "career",
+    "phase": ["career_phase", "graduation"],
+    "majorTags": ["any"],
+    "goalTags": ["stay", "return_home", "money", "phd", "unknown", "any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 24,
+    "once": true,
+    "conditions": { "minProgress": 62, "maxProgress": 100 },
+    "weightModifiers": [
+      { "condition": "career <= 55", "multiplier": 1.35 }
+    ],
+    "text": "你把简历发给 career advisor。对方的批注很多，但至少比自动拒信更像人在跟你说话。",
+    "choices": [
+      {
+        "text": "按建议重写经历",
+        "effects": { "career": 6, "english": 2, "sanity": -2 },
+        "flagsAdd": ["career_advisor_used"],
+        "furnitureAdd": [],
+        "resultText": "你删掉了空泛形容词，把经历改成了能被理解的证据。"
+      },
+      {
+        "text": "约一次模拟面试",
+        "effects": { "career": 5, "english": 3, "sanity": -3 },
+        "flagsAdd": ["career_advisor_used", "mock_interview_done"],
+        "furnitureAdd": [],
+        "resultText": "尴尬是真的，进步也是真的。"
+      },
+      {
+        "text": "只收藏批注，暂时不动",
+        "effects": { "sanity": 1, "career": -1 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "建议很有用，只是还没有变成你的行动。"
+      }
+    ]
+  }
+]

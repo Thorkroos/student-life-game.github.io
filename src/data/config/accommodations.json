@@ -1,0 +1,46 @@
+[
+  {
+    "id": "student_accommodation",
+    "label": "学生公寓",
+    "description": "贵但稳定，行政流程清楚，社交机会多。",
+    "effects": {
+      "money": -10,
+      "sanity": 4,
+      "social": 3,
+      "lifeSkill": -1
+    }
+  },
+  {
+    "id": "share_house",
+    "label": "Share house",
+    "description": "成本可控，但室友、清洁、噪音和合同细节会经常出现。",
+    "effects": {
+      "money": 2,
+      "lifeSkill": 3,
+      "sanity": -3,
+      "social": 1
+    }
+  },
+  {
+    "id": "homestay",
+    "label": "Homestay",
+    "description": "照顾更多，自由更少，文化沟通更密集。",
+    "effects": {
+      "english": 3,
+      "sanity": 2,
+      "identity": -2,
+      "money": -4
+    }
+  },
+  {
+    "id": "outer_suburb",
+    "label": "远郊合租",
+    "description": "房租轻一点，通勤重很多。",
+    "effects": {
+      "money": 6,
+      "sanity": -4,
+      "lifeSkill": 2,
+      "social": -2
+    }
+  }
+]

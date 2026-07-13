@@ -152,6 +152,52 @@ input, select {
 .phase-panel span,
 .phase-panel small { color: var(--muted); font-size: 12px; }
 .phase-panel strong { color: var(--accent); font-size: 18px; line-height: 1.25; }
+.context-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.context-panel div {
+  display: grid;
+  gap: 3px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.04);
+  padding: 9px;
+}
+.context-panel span { color: var(--muted); font-size: 11px; }
+.context-panel strong { color: var(--text); font-size: 13px; line-height: 1.25; }
+.admin-panel {
+  border-top: 1px solid rgba(255,255,255,0.07);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  padding: 12px 0;
+  margin: 10px 0 2px;
+}
+.admin-list { display: grid; gap: 6px; margin-top: 9px; }
+.check-row {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 6px;
+  align-items: center;
+  color: var(--muted);
+  font-size: 12px;
+}
+.check-row span {
+  display: inline-grid;
+  place-items: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--muted);
+}
+.check-row.done { color: var(--text); }
+.check-row.done span {
+  border-color: rgba(159,211,199,0.45);
+  background: rgba(159,211,199,0.16);
+  color: var(--accent-2);
+}
 .stat-value { font-weight: 800; color: var(--accent-2); min-width: 32px; text-align: right; }
 .event-title { font-size: 28px; }
 .event-text, .result-text {

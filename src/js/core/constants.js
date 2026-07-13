@@ -8,6 +8,11 @@ export const MAIN_STAT_KEYS = [
   'social', 'visa', 'career'
 ];
 
+export const REPORT_STAT_KEYS = [
+  ...MAIN_STAT_KEYS,
+  'identity'
+];
+
 export const STAT_NAMES = {
   money: '金钱',
   sanity: '精神',

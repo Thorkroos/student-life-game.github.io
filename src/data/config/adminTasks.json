@@ -1,0 +1,38 @@
+[
+  {
+    "id": "bank_account",
+    "label": "银行账户",
+    "description": "本地消费、收工资和生活费流转的基础。",
+    "flag": "bank_account_ready"
+  },
+  {
+    "id": "phone_transport",
+    "label": "电话卡/交通",
+    "description": "能导航、联系房东和正常通勤。",
+    "flag": "transport_card_ready"
+  },
+  {
+    "id": "oshc",
+    "label": "OSHC/看病流程",
+    "description": "知道生病时去哪里，而不是只靠热水。",
+    "flag": "oshc_ready"
+  },
+  {
+    "id": "address_update",
+    "label": "住址更新",
+    "description": "让学校和关键账户知道你真的住在哪里。",
+    "flag": "address_updated"
+  },
+  {
+    "id": "usi_student_id",
+    "label": "USI/学生证",
+    "description": "注册、身份验证和校园服务入口。",
+    "flag": "student_identity_ready"
+  },
+  {
+    "id": "work_admin",
+    "label": "TFN/Super",
+    "description": "开始正规打工前的税号、养老金和工资信息。",
+    "flag": "work_admin_ready"
+  }
+]

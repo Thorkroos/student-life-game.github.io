@@ -87,27 +87,20 @@ export function renderCreator(app, data) {
   function renderAlloc() {
     const wrap = document.querySelector('#alloc-list');
     wrap.innerHTML = ALLOC_KEYS.map(key => `
-      <div class="alloc-row">
-        <div>${STAT_NAMES[key]}</div>
-        <div class="alloc-control">
-          <button class="btn small" data-dec="${key}">-</button>
-          <span class="stat-value">${allocations[key]}</span>
-          <button class="btn small" data-inc="${key}">+</button>
-        </div>
+      <div class="alloc-row slider-row">
+        <label for="alloc-${key}">${STAT_NAMES[key]}</label>
+        <input class="alloc-slider" id="alloc-${key}" type="range" min="0" max="20" value="${allocations[key]}" data-alloc="${key}" />
+        <span class="stat-value">${allocations[key]}</span>
       </div>`).join('');
     document.querySelector('#remaining').textContent = remaining;
-    wrap.querySelectorAll('[data-inc]').forEach(btn => btn.addEventListener('click', () => {
-      const key = btn.dataset.inc;
-      if (remaining <= 0 || allocations[key] >= 20) return;
-      allocations[key] += 1;
-      remaining -= 1;
-      renderAlloc();
-    }));
-    wrap.querySelectorAll('[data-dec]').forEach(btn => btn.addEventListener('click', () => {
-      const key = btn.dataset.dec;
-      if (allocations[key] <= 0) return;
-      allocations[key] -= 1;
-      remaining += 1;
+    wrap.querySelectorAll('[data-alloc]').forEach(slider => slider.addEventListener('input', () => {
+      const key = slider.dataset.alloc;
+      const current = allocations[key];
+      let next = Number(slider.value);
+      const delta = next - current;
+      if (delta > remaining) next = current + remaining;
+      allocations[key] = Math.max(0, Math.min(20, next));
+      remaining -= allocations[key] - current;
       renderAlloc();
     }));
   }

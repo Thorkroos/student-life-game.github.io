@@ -3,36 +3,42 @@
     "id": "bank_account",
     "label": "银行账户",
     "description": "本地消费、收工资和生活费流转的基础。",
+    "buff": "生活熟练度更稳，后续打工和生活费流转更顺。",
     "flag": "bank_account_ready"
   },
   {
     "id": "phone_transport",
     "label": "电话卡/交通",
     "description": "能导航、联系房东和正常通勤。",
+    "buff": "通勤和临时沟通压力下降，更容易触发外出类机会。",
     "flag": "transport_card_ready"
   },
   {
     "id": "oshc",
     "label": "OSHC/看病流程",
     "description": "知道生病时去哪里，而不是只靠热水。",
+    "buff": "健康风险更可控，低精神状态时更容易稳住。",
     "flag": "oshc_ready"
   },
   {
     "id": "address_update",
     "label": "住址更新",
     "description": "让学校和关键账户知道你真的住在哪里。",
+    "buff": "签证和学校通知风险下降，后续行政事件惩罚更轻。",
     "flag": "address_updated"
   },
   {
     "id": "usi_student_id",
     "label": "USI/学生证",
     "description": "注册、身份验证和校园服务入口。",
+    "buff": "校园服务入口打开，学习与支持服务路线更顺。",
     "flag": "student_identity_ready"
   },
   {
     "id": "work_admin",
     "label": "TFN/Super",
     "description": "开始正规打工前的税号、养老金和工资信息。",
+    "buff": "正规打工路线解锁，工资与税务相关风险下降。",
     "flag": "work_admin_ready"
   }
 ]

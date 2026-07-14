@@ -12,6 +12,11 @@
     "majorTags": [
       "any"
     ],
+    "accommodationTags": [
+      "share_house",
+      "student_accommodation",
+      "outer_suburb"
+    ],
     "goalTags": [
       "any"
     ],
@@ -78,6 +83,11 @@
     ],
     "majorTags": [
       "any"
+    ],
+    "accommodationTags": [
+      "share_house",
+      "student_accommodation",
+      "outer_suburb"
     ],
     "goalTags": [
       "any"
@@ -150,6 +160,11 @@
     ],
     "majorTags": [
       "any"
+    ],
+    "accommodationTags": [
+      "share_house",
+      "student_accommodation",
+      "outer_suburb"
     ],
     "goalTags": [
       "any"

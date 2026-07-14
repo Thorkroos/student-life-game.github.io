@@ -2,6 +2,7 @@
   "basic": [
     "basic/arrival.json",
     "basic/australiaArrival.json",
+    "basic/australiaAccommodationRoutes.json",
     "basic/australiaAdmin.json",
     "basic/school.json",
     "basic/australiaSchool.json",

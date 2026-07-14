@@ -175,6 +175,12 @@ const FALLBACK_EVENTS = [
 
 export function getNextEvent(state, events, data) {
   const eligible = events.filter(event => eventMatches(state, event));
+  state.availableEventCount = eligible.length;
+  state.availableEventIds = eligible
+    .slice()
+    .sort((a, b) => calculateEventWeight(state, b) - calculateEventWeight(state, a))
+    .slice(0, 12)
+    .map(event => event.id);
   const event = pickWeighted(eligible, e => calculateEventWeight(state, e));
   return event || getFallbackEvent(state);
 }

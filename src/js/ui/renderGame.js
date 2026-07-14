@@ -16,6 +16,7 @@ export function renderGame(app, data, state, event, handlers = {}) {
           <span class="badge">${selectedMajor}</span>
           <span class="badge">${selectedGoal}</span>
           <span class="badge">${event?.category || 'basic'} / ${event?.type || 'life'}</span>
+          <span class="badge">事件池 ${state.availableEventCount ?? '-'}</span>
         </div>
         <div class="actions" style="margin:0">
           <button class="btn small" id="manual-save">保存</button>
@@ -25,7 +26,7 @@ export function renderGame(app, data, state, event, handlers = {}) {
       ${timelineHeaderHtml(state, data)}
       <section class="grid game-grid">
         ${statusPanelHtml(state, data)}
-        <article class="card">
+        <article class="card event-card">
           <h2 class="event-title">${event?.title || '普通的一天'}</h2>
           <div class="event-text">${event?.text || ''}</div>
           ${chosenText ? `<p class="footer-note">你的选择：${chosenText}</p>` : ''}
@@ -37,9 +38,10 @@ export function renderGame(app, data, state, event, handlers = {}) {
             }
           </div>
         </article>
-        <aside class="card soft">
+        <aside class="card soft hint-card">
           <h3>当前提示</h3>
           <p>${getHint(state)}</p>
+          <p class="footer-note">候选事件：${(state.availableEventIds || []).slice(0, 4).join(' / ') || 'fallback'}</p>
           <p class="footer-note">具体数值隐藏，通关后会显示完整报告。</p>
         </aside>
       </section>

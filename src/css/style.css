@@ -129,6 +129,13 @@ input, select {
   padding: 10px 0;
   border-bottom: 1px solid rgba(255,255,255,0.07);
 }
+.slider-row {
+  grid-template-columns: 84px minmax(0, 1fr) 34px;
+}
+.alloc-slider {
+  accent-color: var(--accent);
+  padding: 0;
+}
 .alloc-control { display: flex; gap: 8px; align-items: center; }
 .pill {
   display: inline-flex;
@@ -183,6 +190,11 @@ input, select {
   color: var(--muted);
   font-size: 12px;
 }
+.check-row small {
+  grid-column: 2;
+  color: var(--muted);
+  line-height: 1.45;
+}
 .check-row span {
   display: inline-grid;
   place-items: center;
@@ -197,6 +209,12 @@ input, select {
   border-color: rgba(159,211,199,0.45);
   background: rgba(159,211,199,0.16);
   color: var(--accent-2);
+}
+.empty-note {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
 }
 .stat-value { font-weight: 800; color: var(--accent-2); min-width: 32px; text-align: right; }
 .event-title { font-size: 28px; }
@@ -240,4 +258,102 @@ input, select {
   .timeline-band { grid-template-columns: 1fr; }
   .timeline-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .app-shell { padding: 16px; }
+}
+
+@media (max-width: 640px) {
+  .app-shell { padding: 10px; }
+  .topbar {
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  .topbar .actions {
+    gap: 6px;
+  }
+  .badge {
+    display: inline-flex;
+    margin-bottom: 4px;
+    padding: 4px 7px;
+    font-size: 11px;
+  }
+  .timeline-band {
+    gap: 10px;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+  }
+  .timeline-main h2 {
+    margin-bottom: 4px;
+    font-size: 20px;
+  }
+  .timeline-main p,
+  .progress-caption {
+    font-size: 11px;
+  }
+  .progress-wrap.large {
+    height: 9px;
+    margin: 6px 0;
+  }
+  .timeline-steps {
+    display: none;
+  }
+  .game-grid {
+    gap: 10px;
+  }
+  .event-card {
+    order: 1;
+  }
+  .status-card {
+    order: 2;
+  }
+  .hint-card {
+    display: none;
+  }
+  .card {
+    padding: 13px;
+    border-radius: 12px;
+  }
+  .event-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .event-text,
+  .result-text {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+  .choice-list {
+    gap: 8px;
+    margin-top: 14px;
+  }
+  .choice-btn {
+    padding: 11px 12px;
+    border-radius: 10px;
+  }
+  .phase-panel,
+  .context-panel {
+    margin-bottom: 8px;
+  }
+  .phase-panel {
+    padding: 9px;
+  }
+  .phase-panel strong {
+    font-size: 16px;
+  }
+  .context-panel div {
+    padding: 7px;
+  }
+  .admin-panel {
+    padding: 9px 0;
+    margin: 8px 0 0;
+  }
+  .status-row {
+    padding: 7px 0;
+    font-size: 13px;
+  }
+  .footer-note {
+    margin-top: 12px;
+  }
+  .slider-row {
+    grid-template-columns: 72px minmax(0, 1fr) 30px;
+  }
 }

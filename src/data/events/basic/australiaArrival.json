@@ -120,6 +120,7 @@
     "type": "housing",
     "phase": ["arrival", "adapt"],
     "majorTags": ["any"],
+    "accommodationTags": ["share_house", "student_accommodation", "outer_suburb"],
     "goalTags": ["any"],
     "backgroundTags": ["any"],
     "baseWeight": 38,

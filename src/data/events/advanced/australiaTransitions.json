@@ -84,6 +84,7 @@
     "type": "housing",
     "phase": ["graduation"],
     "majorTags": ["any"],
+    "accommodationTags": ["share_house", "student_accommodation", "outer_suburb"],
     "goalTags": ["return_home", "unknown", "stay", "any"],
     "backgroundTags": ["any"],
     "baseWeight": 24,

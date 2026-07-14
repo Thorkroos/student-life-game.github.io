@@ -1,0 +1,335 @@
+[
+  {
+    "id": "au_homestay_dinner_first_week",
+    "title": "Homestay的第一顿晚饭",
+    "category": "basic",
+    "type": "life",
+    "phase": ["arrival", "adapt"],
+    "accommodationTags": ["homestay"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 62,
+    "contextWeights": { "accommodation": { "homestay": 1.6 }, "phase": { "arrival": 1.35 } },
+    "once": true,
+    "conditions": { "minProgress": 0, "maxProgress": 26 },
+    "weightModifiers": [],
+    "text": "寄宿家庭问你晚饭有没有忌口。餐桌上没有中介、押金和地毯，只有口音、礼貌和你一边听一边点头的努力。",
+    "choices": [
+      {
+        "text": "认真说明自己的饮食习惯",
+        "effects": { "english": 3, "lifeSkill": 2, "sanity": 1 },
+        "flagsAdd": ["homestay_food_boundary"],
+        "furnitureAdd": [],
+        "resultText": "你说得不完美，但对方听懂了。生活边界从一顿饭开始变清楚。"
+      },
+      {
+        "text": "什么都说可以，先适应",
+        "effects": { "sanity": 2, "identity": -2 },
+        "flagsAdd": ["homestay_over_adapted"],
+        "furnitureAdd": [],
+        "resultText": "你暂时避免了尴尬，也把一点真实需求往后推了。"
+      },
+      {
+        "text": "借机多聊几句本地生活",
+        "effects": { "english": 4, "social": 2, "sanity": -1 },
+        "flagsAdd": ["homestay_local_context"],
+        "furnitureAdd": [],
+        "resultText": "这不是课堂英语，但比课堂更像真的在生活。"
+      },
+      {
+        "text": "主动提出周末做一次家乡菜",
+        "effects": { "identity": 3, "social": 2, "money": -3 },
+        "flagsAdd": ["homestay_shared_meal"],
+        "furnitureAdd": [],
+        "resultText": "你把一点自己的生活带上了餐桌，而不是只把自己塞进别人的规则里。"
+      }
+    ]
+  },
+  {
+    "id": "au_homestay_house_rules",
+    "title": "寄宿家庭的家规",
+    "category": "basic",
+    "type": "housing",
+    "phase": ["adapt", "mid_semester"],
+    "accommodationTags": ["homestay"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 42,
+    "contextWeights": { "accommodation": { "homestay": 1.45 } },
+    "once": true,
+    "conditions": { "minProgress": 8, "maxProgress": 48 },
+    "weightModifiers": [
+      { "condition": "identity <= 45", "multiplier": 1.25 }
+    ],
+    "text": "你发现洗衣时间、回家时间、厨房使用都有默认规则。它们不一定不合理，但也不完全像你的生活。",
+    "choices": [
+      {
+        "text": "把规则问清楚，写进备忘录",
+        "effects": { "lifeSkill": 4, "english": 2, "sanity": -1 },
+        "flagsAdd": ["homestay_rules_clear"],
+        "furnitureAdd": [],
+        "resultText": "规则被说清楚之后，至少不会每天用猜的方式消耗你。"
+      },
+      {
+        "text": "礼貌争取一个更晚的回家时间",
+        "effects": { "identity": 3, "english": 3, "social": -1 },
+        "flagsAdd": ["homestay_boundary_talk"],
+        "furnitureAdd": [],
+        "resultText": "你没有吵架，只是把自己的生活也放进了讨论。"
+      },
+      {
+        "text": "暂时全按对方习惯来",
+        "effects": { "sanity": 1, "identity": -3, "lifeSkill": 1 },
+        "flagsAdd": ["homestay_over_adapted"],
+        "furnitureAdd": [],
+        "resultText": "适应很快，但你隐约知道，太会适应也会变成另一种疲惫。"
+      }
+    ]
+  },
+  {
+    "id": "au_student_accommodation_reception",
+    "title": "学生公寓前台",
+    "category": "basic",
+    "type": "housing",
+    "phase": ["arrival", "adapt"],
+    "accommodationTags": ["student_accommodation"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 56,
+    "contextWeights": { "accommodation": { "student_accommodation": 1.5 }, "phase": { "arrival": 1.25 } },
+    "once": true,
+    "conditions": { "minProgress": 0, "maxProgress": 28 },
+    "weightModifiers": [],
+    "text": "学生公寓前台给你门禁、邮箱和公共空间说明。这里没有房东拉扯，但每一条规定都藏在住户手册里。",
+    "choices": [
+      {
+        "text": "当场问清报修和访客规则",
+        "effects": { "lifeSkill": 4, "english": 2, "sanity": -1 },
+        "flagsAdd": ["student_accommodation_rules"],
+        "furnitureAdd": [],
+        "resultText": "你少了一点自由发挥，也少了很多以后才知道的坑。"
+      },
+      {
+        "text": "先去公共厨房认识人",
+        "effects": { "social": 4, "sanity": 1, "lifeSkill": 1 },
+        "flagsAdd": ["student_accommodation_social_start"],
+        "furnitureAdd": [],
+        "resultText": "厨房里的名字比手册难记，但它们更像生活。"
+      },
+      {
+        "text": "直接回房间关门休息",
+        "effects": { "sanity": 3, "social": -2 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "你没有错过全部，只是给自己留了一晚恢复。"
+      }
+    ]
+  },
+  {
+    "id": "au_student_accommodation_shared_kitchen",
+    "title": "公共厨房高峰期",
+    "category": "basic",
+    "type": "life",
+    "phase": ["adapt", "mid_semester", "exam"],
+    "accommodationTags": ["student_accommodation"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 38,
+    "contextWeights": { "accommodation": { "student_accommodation": 1.35 } },
+    "once": true,
+    "conditions": { "minProgress": 10, "maxProgress": 62 },
+    "weightModifiers": [],
+    "text": "晚饭时间，公共厨房像一场小型联合国。锅、冰箱格和微波炉排队共同组成了你的生活管理考试。",
+    "choices": [
+      {
+        "text": "错峰备餐，一次做两天",
+        "effects": { "lifeSkill": 4, "money": 2, "sanity": 1 },
+        "flagsAdd": ["meal_prep_routine"],
+        "furnitureAdd": [],
+        "resultText": "你没有赢过厨房高峰，但你绕开了它。"
+      },
+      {
+        "text": "边等边和邻居聊天",
+        "effects": { "social": 3, "english": 2, "sanity": -1 },
+        "flagsAdd": ["kitchen_small_talk"],
+        "furnitureAdd": [],
+        "resultText": "等待没有变短，但变得不那么像浪费。"
+      },
+      {
+        "text": "放弃做饭，买外卖",
+        "effects": { "money": -7, "sanity": 2, "lifeSkill": -1 },
+        "flagsAdd": [],
+        "furnitureAdd": [],
+        "resultText": "问题被一份外卖跳过了，账单没有。"
+      }
+    ]
+  },
+  {
+    "id": "au_share_house_bill_split",
+    "title": "Share house分账",
+    "category": "basic",
+    "type": "housing",
+    "phase": ["adapt", "mid_semester"],
+    "accommodationTags": ["share_house"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 44,
+    "contextWeights": { "accommodation": { "share_house": 1.45 } },
+    "once": true,
+    "conditions": { "minProgress": 8, "maxProgress": 48 },
+    "weightModifiers": [],
+    "text": "水电网账单来了。每个人都觉得自己用得不多，表格突然成了共居关系的压力测试。",
+    "choices": [
+      {
+        "text": "建共享表格，按规则分摊",
+        "effects": { "lifeSkill": 5, "social": 1, "sanity": -1 },
+        "flagsAdd": ["share_house_bill_system"],
+        "furnitureAdd": [],
+        "resultText": "表格不能制造公平，但它至少让争议有地方落脚。"
+      },
+      {
+        "text": "先垫付，之后再催",
+        "effects": { "money": -8, "social": 2, "sanity": -2 },
+        "flagsAdd": ["share_house_bill_fronted"],
+        "furnitureAdd": [],
+        "resultText": "你买到了短暂和平，也买到了一条未来催款线。"
+      },
+      {
+        "text": "直接在群里说清边界",
+        "effects": { "identity": 3, "social": -2, "lifeSkill": 2 },
+        "flagsAdd": ["share_house_boundary"],
+        "furnitureAdd": [],
+        "resultText": "群聊气氛冷了一点，但账单终于不再只靠默契。"
+      }
+    ]
+  },
+  {
+    "id": "au_share_house_inspection_scramble",
+    "title": "看房群里的临时空房",
+    "category": "basic",
+    "type": "housing",
+    "phase": ["arrival", "adapt"],
+    "accommodationTags": ["share_house", "outer_suburb"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 36,
+    "contextWeights": { "accommodation": { "share_house": 1.3, "outer_suburb": 1.2 }, "city": { "sydney": 1.25, "melbourne": 1.15 } },
+    "once": true,
+    "conditions": { "minProgress": 0, "maxProgress": 34 },
+    "weightModifiers": [
+      { "condition": "money <= 45", "multiplier": 1.25 }
+    ],
+    "text": "租房群里突然出现一个临时空房。价格看着合理，但照片角度很努力，地址也需要你自己查通勤。",
+    "choices": [
+      {
+        "text": "先查通勤和周边再约看房",
+        "effects": { "lifeSkill": 4, "sanity": -1, "money": 1 },
+        "flagsAdd": ["rental_commute_checked"],
+        "furnitureAdd": [],
+        "resultText": "你没有被价格立刻带走，而是先看清每天要付出的时间。"
+      },
+      {
+        "text": "立刻约，抢到再说",
+        "effects": { "money": 3, "sanity": -3, "lifeSkill": 1 },
+        "flagsAdd": ["rental_fast_move"],
+        "furnitureAdd": [],
+        "resultText": "你比别人快了一步，也把风险一起打包带上。"
+      },
+      {
+        "text": "让本地朋友帮你看一眼",
+        "effects": { "social": 2, "lifeSkill": 3, "sanity": 1 },
+        "flagsAdd": ["rental_second_opinion"],
+        "furnitureAdd": [],
+        "resultText": "朋友指出了照片里你没看到的问题，也让选择不再只靠冲动。"
+      }
+    ]
+  },
+  {
+    "id": "au_outer_suburb_bus_gap",
+    "title": "远郊公交间隔",
+    "category": "basic",
+    "type": "life",
+    "phase": ["adapt", "mid_semester", "exam"],
+    "accommodationTags": ["outer_suburb"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 46,
+    "contextWeights": { "accommodation": { "outer_suburb": 1.55 }, "phase": { "exam": 1.2 } },
+    "once": true,
+    "conditions": { "minProgress": 8, "maxProgress": 65 },
+    "weightModifiers": [],
+    "text": "你错过一班公交，下一班要很久。远郊房租帮你省下的钱，正在用时间慢慢收回去。",
+    "choices": [
+      {
+        "text": "提前半小时出门，建立通勤缓冲",
+        "effects": { "lifeSkill": 4, "sanity": -1, "gpa": 1 },
+        "flagsAdd": ["commute_buffer"],
+        "furnitureAdd": [],
+        "resultText": "你牺牲了一点睡眠，换来不再每天和迟到赛跑。"
+      },
+      {
+        "text": "骑车或步行到更大的站点",
+        "effects": { "lifeSkill": 3, "sanity": -2, "money": 2 },
+        "flagsAdd": ["alternate_commute"],
+        "furnitureAdd": [],
+        "resultText": "路线变复杂了，但你不再完全被一班车控制。"
+      },
+      {
+        "text": "偶尔打车救急",
+        "effects": { "money": -10, "sanity": 2, "gpa": 1 },
+        "flagsAdd": ["rideshare_late_night"],
+        "furnitureAdd": [],
+        "resultText": "你救回了一次出勤，也清楚地看见远郊的隐藏账单。"
+      }
+    ]
+  },
+  {
+    "id": "au_housing_weather_damage",
+    "title": "雨季里的房间问题",
+    "category": "basic",
+    "type": "housing",
+    "phase": ["mid_semester", "break"],
+    "accommodationTags": ["share_house", "student_accommodation", "outer_suburb"],
+    "majorTags": ["any"],
+    "goalTags": ["any"],
+    "backgroundTags": ["any"],
+    "baseWeight": 30,
+    "contextWeights": { "city": { "melbourne": 1.25, "sydney": 1.1, "brisbane": 1.15 } },
+    "once": true,
+    "conditions": { "minProgress": 24, "maxProgress": 70 },
+    "weightModifiers": [
+      { "condition": "lifeSkill <= 45", "multiplier": 1.25 }
+    ],
+    "text": "连续下雨之后，窗边开始潮。你意识到澳洲租房不只有价格问题，还有房屋维护和沟通问题。",
+    "choices": [
+      {
+        "text": "拍照、记录日期并提交报修",
+        "effects": { "lifeSkill": 5, "english": 2, "sanity": -2 },
+        "flagsAdd": ["maintenance_reported"],
+        "furnitureAdd": [],
+        "resultText": "证据链很冷静，冷静到比情绪更能推动事情。"
+      },
+      {
+        "text": "先买除湿用品控制局面",
+        "effects": { "money": -6, "lifeSkill": 3, "sanity": 1 },
+        "flagsAdd": ["mould_controlled"],
+        "furnitureAdd": [],
+        "resultText": "你没有解决根因，但阻止了问题继续扩大。"
+      },
+      {
+        "text": "问室友或前台有没有固定流程",
+        "effects": { "social": 2, "lifeSkill": 3, "sanity": 1 },
+        "flagsAdd": ["maintenance_process_learned"],
+        "furnitureAdd": [],
+        "resultText": "别人踩过的坑，终于变成你少走一点弯路。"
+      }
+    ]
+  }
+]

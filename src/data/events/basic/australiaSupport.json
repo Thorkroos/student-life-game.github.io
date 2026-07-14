@@ -46,6 +46,7 @@
     "type": "housing",
     "phase": ["mid_semester", "break", "graduation"],
     "majorTags": ["any"],
+    "accommodationTags": ["share_house", "student_accommodation", "outer_suburb"],
     "goalTags": ["any"],
     "backgroundTags": ["any"],
     "baseWeight": 22,

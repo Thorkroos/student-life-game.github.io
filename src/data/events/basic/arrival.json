@@ -10,6 +10,11 @@
     "majorTags": [
       "any"
     ],
+    "accommodationTags": [
+      "share_house",
+      "student_accommodation",
+      "outer_suburb"
+    ],
     "goalTags": [
       "any"
     ],
@@ -62,6 +67,19 @@
         ],
         "furnitureAdd": [],
         "resultText": "你没有拍到地毯最真实的角度。"
+      },
+      {
+        "text": "先列出今晚必须补齐的东西",
+        "effects": {
+          "lifeSkill": 3,
+          "sanity": -1,
+          "money": 1
+        },
+        "flagsAdd": [
+          "arrival_room_checklist"
+        ],
+        "furnitureAdd": [],
+        "resultText": "清单不浪漫，但它让第一晚从失控变成了可以逐项解决。"
       }
     ]
   },
@@ -122,6 +140,19 @@
         "flagsAdd": [],
         "furnitureAdd": [],
         "resultText": "你第一次用英文维护了自己的钱包。"
+      },
+      {
+        "text": "先买短期预付卡，过两周再换",
+        "effects": {
+          "money": 1,
+          "lifeSkill": 3,
+          "sanity": 1
+        },
+        "flagsAdd": [
+          "sim_plan_delayed"
+        ],
+        "furnitureAdd": [],
+        "resultText": "你没有立刻绑定长期套餐，也给自己留了一点了解城市的时间。"
       }
     ]
   },
@@ -184,6 +215,20 @@
         "flagsAdd": [],
         "furnitureAdd": [],
         "resultText": "你收藏了五个链接，未来可能一个都打不开。"
+      },
+      {
+        "text": "去国际学生服务台问行政清单",
+        "effects": {
+          "lifeSkill": 3,
+          "visa": 2,
+          "social": 1,
+          "sanity": -1
+        },
+        "flagsAdd": [
+          "student_service_map"
+        ],
+        "furnitureAdd": [],
+        "resultText": "你没有解决所有问题，但知道了哪些窗口真的能帮你。"
       }
     ]
   }

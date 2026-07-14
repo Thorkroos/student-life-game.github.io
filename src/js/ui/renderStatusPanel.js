@@ -32,11 +32,15 @@ export function timelineHeaderHtml(state, data) {
 
 export function statusPanelHtml(state, data) {
   const adminProgress = getAdminTaskProgress(state, data);
-  const adminItems = adminProgress.tasks.map(task => `
-    <div class="check-row ${task.completed ? 'done' : ''}">
-      <span>${task.completed ? '✓' : '·'}</span>
+  const completedAdminTasks = adminProgress.tasks.filter(task => task.completed);
+  const adminItems = completedAdminTasks.length
+    ? completedAdminTasks.map(task => `
+    <div class="check-row done">
+      <span>✓</span>
       <strong>${task.label}</strong>
-    </div>`).join('');
+      <small>${task.buff || task.description || '已完成，后续相关风险下降。'}</small>
+    </div>`).join('')
+    : '<p class="empty-note">还没有完成的行政事项。</p>';
   const rows = MAIN_STAT_KEYS.map(key => `
     <div class="status-row">
       <span>${STAT_NAMES[key]}</span>
@@ -44,7 +48,7 @@ export function statusPanelHtml(state, data) {
     </div>`).join('');
   const phaseInfo = getPhaseProgress(state, data);
   return `
-    <aside class="card">
+    <aside class="card status-card">
       <h3>${state.playerName}</h3>
       <div class="phase-panel">
         <span>当前时期</span>
@@ -62,7 +66,7 @@ export function statusPanelHtml(state, data) {
       <div class="progress-wrap"><div class="progress-bar" style="width:${state.progress}%"></div></div>
       <div class="admin-panel">
         <div class="progress-caption">
-          <span>行政清单</span>
+          <span>已完成行政</span>
           <strong>${adminProgress.completedCount}/${adminProgress.totalCount}</strong>
         </div>
         <div class="admin-list">${adminItems}</div>

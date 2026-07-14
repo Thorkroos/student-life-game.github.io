@@ -6,7 +6,7 @@
     "type": "housing",
     "phase": ["adapt", "mid_semester", "career_phase"],
     "cityTags": ["sydney"],
-    "accommodationTags": ["share_house", "outer_suburb", "any"],
+    "accommodationTags": ["share_house", "outer_suburb"],
     "majorTags": ["any"],
     "goalTags": ["any"],
     "backgroundTags": ["any"],
